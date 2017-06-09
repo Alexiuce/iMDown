@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8C4E6E81EEAB4B3003712E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C4E6E71EEAB4B3003712E0 /* AppDelegate.m */; };
-		D8C4E6EB1EEAB4B3003712E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C4E6EA1EEAB4B3003712E0 /* main.m */; };
-		D8C4E6EE1EEAB4B3003712E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C4E6ED1EEAB4B3003712E0 /* ViewController.m */; };
-		D8C4E6F01EEAB4B3003712E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C4E6EF1EEAB4B3003712E0 /* Assets.xcassets */; };
-		D8C4E6F31EEAB4B3003712E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C4E6F11EEAB4B3003712E0 /* Main.storyboard */; };
+		D8663DDF1EEAB66600A0493D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8663DD71EEAB66600A0493D /* AppDelegate.m */; };
+		D8663DE01EEAB66600A0493D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8663DD81EEAB66600A0493D /* Assets.xcassets */; };
+		D8663DE11EEAB66600A0493D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8663DD91EEAB66600A0493D /* Main.storyboard */; };
+		D8663DE21EEAB66600A0493D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8663DDB1EEAB66600A0493D /* Info.plist */; };
+		D8663DE31EEAB66600A0493D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8663DDC1EEAB66600A0493D /* main.m */; };
+		D8663DE41EEAB66600A0493D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8663DDE1EEAB66600A0493D /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8C4E6E31EEAB4B3003712E0 /* iMDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8C4E6E61EEAB4B3003712E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D8C4E6E71EEAB4B3003712E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8C4E6EA1EEAB4B3003712E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8C4E6EC1EEAB4B3003712E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D8C4E6ED1EEAB4B3003712E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D8C4E6EF1EEAB4B3003712E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D8C4E6F21EEAB4B3003712E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8C4E6F41EEAB4B3003712E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8663DD61EEAB66600A0493D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8663DD71EEAB66600A0493D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8663DD81EEAB66600A0493D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8663DDA1EEAB66600A0493D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8663DDB1EEAB66600A0493D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8663DDC1EEAB66600A0493D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8663DDD1EEAB66600A0493D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8663DDE1EEAB66600A0493D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8C4E6E31EEAB4B3003712E0 /* iMDoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +38,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8663DD51EEAB66600A0493D /* iMDoes */ = {
+			isa = PBXGroup;
+			children = (
+				D8663DD61EEAB66600A0493D /* AppDelegate.h */,
+				D8663DD71EEAB66600A0493D /* AppDelegate.m */,
+				D8663DD81EEAB66600A0493D /* Assets.xcassets */,
+				D8663DD91EEAB66600A0493D /* Main.storyboard */,
+				D8663DDB1EEAB66600A0493D /* Info.plist */,
+				D8663DDC1EEAB66600A0493D /* main.m */,
+				D8663DDD1EEAB66600A0493D /* ViewController.h */,
+				D8663DDE1EEAB66600A0493D /* ViewController.m */,
+			);
+			path = iMDoes;
+			sourceTree = "<group>";
+		};
 		D8C4E6DA1EEAB4B2003712E0 = {
 			isa = PBXGroup;
 			children = (
-				D8C4E6E51EEAB4B3003712E0 /* iMDown */,
+				D8663DD51EEAB66600A0493D /* iMDoes */,
 				D8C4E6E41EEAB4B3003712E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,40 +64,17 @@
 		D8C4E6E41EEAB4B3003712E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8C4E6E31EEAB4B3003712E0 /* iMDown.app */,
+				D8C4E6E31EEAB4B3003712E0 /* iMDoes.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D8C4E6E51EEAB4B3003712E0 /* iMDown */ = {
-			isa = PBXGroup;
-			children = (
-				D8C4E6E61EEAB4B3003712E0 /* AppDelegate.h */,
-				D8C4E6E71EEAB4B3003712E0 /* AppDelegate.m */,
-				D8C4E6EC1EEAB4B3003712E0 /* ViewController.h */,
-				D8C4E6ED1EEAB4B3003712E0 /* ViewController.m */,
-				D8C4E6EF1EEAB4B3003712E0 /* Assets.xcassets */,
-				D8C4E6F11EEAB4B3003712E0 /* Main.storyboard */,
-				D8C4E6F41EEAB4B3003712E0 /* Info.plist */,
-				D8C4E6E91EEAB4B3003712E0 /* Supporting Files */,
-			);
-			path = iMDown;
-			sourceTree = "<group>";
-		};
-		D8C4E6E91EEAB4B3003712E0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8C4E6EA1EEAB4B3003712E0 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8C4E6E21EEAB4B3003712E0 /* iMDown */ = {
+		D8C4E6E21EEAB4B3003712E0 /* iMDoes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8C4E6F71EEAB4B3003712E0 /* Build configuration list for PBXNativeTarget "iMDown" */;
+			buildConfigurationList = D8C4E6F71EEAB4B3003712E0 /* Build configuration list for PBXNativeTarget "iMDoes" */;
 			buildPhases = (
 				D8C4E6DF1EEAB4B3003712E0 /* Sources */,
 				D8C4E6E01EEAB4B3003712E0 /* Frameworks */,
@@ -91,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = iMDown;
+			name = iMDoes;
 			productName = iMDown;
-			productReference = D8C4E6E31EEAB4B3003712E0 /* iMDown.app */;
+			productReference = D8C4E6E31EEAB4B3003712E0 /* iMDoes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8C4E6DE1EEAB4B2003712E0 /* Build configuration list for PBXProject "iMDown" */;
+			buildConfigurationList = D8C4E6DE1EEAB4B2003712E0 /* Build configuration list for PBXProject "iMDoes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8C4E6E21EEAB4B3003712E0 /* iMDown */,
+				D8C4E6E21EEAB4B3003712E0 /* iMDoes */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C4E6F01EEAB4B3003712E0 /* Assets.xcassets in Resources */,
-				D8C4E6F31EEAB4B3003712E0 /* Main.storyboard in Resources */,
+				D8663DE01EEAB66600A0493D /* Assets.xcassets in Resources */,
+				D8663DE11EEAB66600A0493D /* Main.storyboard in Resources */,
+				D8663DE21EEAB66600A0493D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,19 +141,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C4E6EE1EEAB4B3003712E0 /* ViewController.m in Sources */,
-				D8C4E6EB1EEAB4B3003712E0 /* main.m in Sources */,
-				D8C4E6E81EEAB4B3003712E0 /* AppDelegate.m in Sources */,
+				D8663DE41EEAB66600A0493D /* ViewController.m in Sources */,
+				D8663DE31EEAB66600A0493D /* main.m in Sources */,
+				D8663DDF1EEAB66600A0493D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8C4E6F11EEAB4B3003712E0 /* Main.storyboard */ = {
+		D8663DD91EEAB66600A0493D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8C4E6F21EEAB4B3003712E0 /* Base */,
+				D8663DDA1EEAB66600A0493D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -262,9 +256,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A95J37CEL7;
-				INFOPLIST_FILE = iMDown/Info.plist;
+				INFOPLIST_FILE = iMDoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xiuce.iMDown;
+				PRODUCT_BUNDLE_IDENTIFIER = xiuce.iMDoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,9 +269,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A95J37CEL7;
-				INFOPLIST_FILE = iMDown/Info.plist;
+				INFOPLIST_FILE = iMDoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xiuce.iMDown;
+				PRODUCT_BUNDLE_IDENTIFIER = xiuce.iMDoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -285,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8C4E6DE1EEAB4B2003712E0 /* Build configuration list for PBXProject "iMDown" */ = {
+		D8C4E6DE1EEAB4B2003712E0 /* Build configuration list for PBXProject "iMDoes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8C4E6F51EEAB4B3003712E0 /* Debug */,
@@ -294,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8C4E6F71EEAB4B3003712E0 /* Build configuration list for PBXNativeTarget "iMDown" */ = {
+		D8C4E6F71EEAB4B3003712E0 /* Build configuration list for PBXNativeTarget "iMDoes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8C4E6F81EEAB4B3003712E0 /* Debug */,
 				D8C4E6F91EEAB4B3003712E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
