@@ -18,6 +18,8 @@
 @property (nonatomic, strong)id eventMonitor;
 @property (nonatomic, assign) SystemSoundID soundID;
 
+
+
 @end
 
 @implementation AppDelegate
@@ -35,6 +37,7 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {
         if (theEvent.type == NSEventTypeKeyDown) {
             //开始播放音效
             AudioServicesPlaySystemSound(_soundID);
+           
         }
         return theEvent;
     };
