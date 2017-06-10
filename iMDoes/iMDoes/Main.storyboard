@@ -763,13 +763,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="jsContext" destination="q3D-jY-gfp" id="ueT-mG-yyn"/>
                         <outlet property="textView" destination="NIp-ee-TAj" id="mNT-1x-zMj"/>
                         <outlet property="webView" destination="cdf-Ne-XgG" id="bdr-xs-7XH"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="q3D-jY-gfp"/>
             </objects>
             <point key="canvasLocation" x="75" y="1069"/>
         </scene>
