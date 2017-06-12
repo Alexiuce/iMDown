@@ -67,6 +67,7 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {
 
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{
+
     return !(flag | ([self.window makeKeyAndOrderFront:self], 0));
 }
 

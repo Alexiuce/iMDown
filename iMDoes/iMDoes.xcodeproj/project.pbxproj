@@ -341,7 +341,7 @@
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = iMDoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.iMDoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,7 +356,7 @@
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = iMDoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.iMDoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -381,6 +381,7 @@
 				D859FC011EEC3C7C0075388C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
