@@ -14,7 +14,7 @@
 
 
 
-@property (nonatomic, strong)NSWindow *window;
+
 @property (nonatomic, strong)id eventMonitor;
 @property (nonatomic, assign) SystemSoundID soundID;
 
@@ -24,14 +24,12 @@
 
 @implementation AppDelegate
 
-void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {
-    
-}
+void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    self.window = NSApp.keyWindow;
     // Register a key listener: Command-L highlights contents of URL box in current window
+    NSLog(@"%@",self.window);
     NSEvent * (^monitorHandler)(NSEvent *);
     monitorHandler = ^NSEvent * (NSEvent * theEvent) {
         if (theEvent.type == NSEventTypeKeyDown) {
@@ -63,13 +61,16 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
     [NSEvent removeMonitor:_eventMonitor];
+  
 }
+
+
 
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{
-
     return !(flag | ([self.window makeKeyAndOrderFront:self], 0));
 }
+
 
 
 

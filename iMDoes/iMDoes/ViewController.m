@@ -10,6 +10,7 @@
 #import "TitleAccessController.h"
 #import <WebKit/WebKit.h>
 #import "MMMarkdown.h"
+#import "AppDelegate.h"
 
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
 
@@ -23,6 +24,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    NSLog(@"%s",__func__);
     [super viewDidLoad];
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];
@@ -37,6 +39,8 @@
         TitleAccessController *tc = [[TitleAccessController alloc]init];
         tc.delegate = self;
         [self.view.window addTitlebarAccessoryViewController:tc];
+        AppDelegate *appDelegate = [NSApp delegate];
+        appDelegate.window = self.view.window;
     });
 }
 
