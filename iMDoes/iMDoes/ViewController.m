@@ -24,7 +24,6 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    NSLog(@"%s",__func__);
     [super viewDidLoad];
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];

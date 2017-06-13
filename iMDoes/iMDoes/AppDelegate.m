@@ -29,7 +29,7 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     // Register a key listener: Command-L highlights contents of URL box in current window
-    NSLog(@"%@",self.window);
+
     NSEvent * (^monitorHandler)(NSEvent *);
     monitorHandler = ^NSEvent * (NSEvent * theEvent) {
         if (theEvent.type == NSEventTypeKeyDown) {
