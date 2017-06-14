@@ -10,7 +10,6 @@
 #import "TitleAccessController.h"
 #import <WebKit/WebKit.h>
 #import "MMMarkdown.h"
-#import "AppDelegate.h"
 
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
 
@@ -38,8 +37,6 @@
         TitleAccessController *tc = [[TitleAccessController alloc]init];
         tc.delegate = self;
         [self.view.window addTitlebarAccessoryViewController:tc];
-        AppDelegate *appDelegate = [NSApp delegate];
-        appDelegate.window = self.view.window;
     });
 }
 

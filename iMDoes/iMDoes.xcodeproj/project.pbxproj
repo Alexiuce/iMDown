@@ -24,6 +24,7 @@
 		D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC221EEC3D4E0075388C /* MMScanner.m */; };
 		D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC241EEC3D4E0075388C /* MMSpanParser.m */; };
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
+		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		D859FC231EEC3D4E0075388C /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
 		D859FC241EEC3D4E0075388C /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
 		D859FC2D1EEC3D740075388C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8F27C741EF17DC2008DB3F3 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		D8F27C751EF17DC2008DB3F3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +102,8 @@
 				D859FC0F1EEC3CD50075388C /* iMDoes.entitlements */,
 				D859FBEE1EEC3C7C0075388C /* AppDelegate.h */,
 				D859FC2D1EEC3D740075388C /* AppDelegate.m */,
+				D8F27C741EF17DC2008DB3F3 /* WindowController.h */,
+				D8F27C751EF17DC2008DB3F3 /* WindowController.m */,
 				D859FC041EEC3CCA0075388C /* ViewController.h */,
 				D859FC051EEC3CCA0075388C /* ViewController.m */,
 				D859FC061EEC3CCA0075388C /* HtmlView.h */,
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FC2A1EEC3D4E0075388C /* MMParser.m in Sources */,
+				D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */,
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,
 				D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */,
 				D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */,
