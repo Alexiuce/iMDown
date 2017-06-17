@@ -11,10 +11,20 @@
 #import <WebKit/WebKit.h>
 #import "MMMarkdown.h"
 
+
+
+
+
+
+
+
+
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
 
 @property (weak) IBOutlet WKWebView *webView;
 @property (unsafe_unretained) IBOutlet NSTextView *textView;
+
+
 
 @end
 
@@ -130,5 +140,7 @@
     //移动光标
     self.textView.selectedRange = selectedRange;
 }
+
+
 
 @end

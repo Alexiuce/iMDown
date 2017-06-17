@@ -7,7 +7,6 @@
 //
 
 #import "WindowController.h"
-#import "AppDelegate.h"
 
 @interface WindowController ()
 
@@ -21,8 +20,6 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
-    AppDelegate *appDelegate = [NSApplication sharedApplication].delegate;
-    appDelegate.myWindow = self.window;
     self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.image = [NSImage imageNamed:@"markdown"];
     self.statusItem.target = self;

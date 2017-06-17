@@ -25,9 +25,13 @@
 		D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC241EEC3D4E0075388C /* MMSpanParser.m */; };
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
 		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
+		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.debug.xcconfig"; sourceTree = "<group>"; };
+		9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.release.xcconfig"; sourceTree = "<group>"; };
+		C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMDoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FBEB1EEC3C7C0075388C /* iMDoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FBEE1EEC3C7C0075388C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D859FBF21EEC3C7C0075388C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,17 +76,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123A83EC0A64444007536FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C090CB56E8541958444DEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */,
+				9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D859FBE21EEC3C7C0075388C = {
 			isa = PBXGroup;
 			children = (
 				D859FBED1EEC3C7C0075388C /* iMDoes */,
 				D859FBEC1EEC3C7C0075388C /* Products */,
+				8C090CB56E8541958444DEA3 /* Pods */,
+				123A83EC0A64444007536FBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D859FBFF1EEC3C7C0075388C /* Build configuration list for PBXNativeTarget "iMDoes" */;
 			buildPhases = (
+				57FAC14851A82906D36F5B96 /* [CP] Check Pods Manifest.lock */,
 				D859FBE71EEC3C7C0075388C /* Sources */,
 				D859FBE81EEC3C7C0075388C /* Frameworks */,
 				D859FBE91EEC3C7C0075388C /* Resources */,
+				76AE00D935690A9D6210A7FD /* [CP] Embed Pods Frameworks */,
+				8A5F75CF07A4D65C7C24BBE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +252,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57FAC14851A82906D36F5B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76AE00D935690A9D6210A7FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5F75CF07A4D65C7C24BBE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D859FBE71EEC3C7C0075388C /* Sources */ = {
@@ -342,6 +417,7 @@
 		};
 		D859FC001EEC3C7C0075388C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iMDoes/iMDoes.entitlements;
@@ -361,6 +437,7 @@
 		};
 		D859FC011EEC3C7C0075388C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iMDoes/iMDoes.entitlements;

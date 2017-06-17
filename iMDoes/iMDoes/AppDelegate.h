@@ -10,7 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (nonatomic, strong)NSWindow *myWindow;
+
 
 @end
 
