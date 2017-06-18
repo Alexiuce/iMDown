@@ -10,7 +10,7 @@
 #import "TitleAccessController.h"
 #import <WebKit/WebKit.h>
 #import "MMMarkdown.h"
-
+#import "MarkdownEditView.h"
 
 
 
@@ -22,7 +22,7 @@
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
 
 @property (weak) IBOutlet WKWebView *webView;
-@property (unsafe_unretained) IBOutlet NSTextView *textView;
+@property (unsafe_unretained) IBOutlet MarkdownEditView *textView;
 
 
 
@@ -83,6 +83,7 @@
                       ",css,htmlString];
     
     [self.webView loadHTMLString:html baseURL:nil];
+    [self.textView updateSyntaxHighlight];
     
 }
 

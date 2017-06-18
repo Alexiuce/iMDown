@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AE71EF55C1000632E42 /* MarkdownEditView.m */; };
+		D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AEB1EF55F2700632E42 /* FontHelper.m */; };
+		D8454AF21EF5768200632E42 /* SyntaxHighLightStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */; };
+		D8454AF51EF57A9A00632E42 /* SyntaxHighLightConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */; };
+		D8454AF71EF62D1D00632E42 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = D8454AF61EF62D1D00632E42 /* markdown.css */; };
 		D859FBF31EEC3C7C0075388C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FBF21EEC3C7C0075388C /* main.m */; };
 		D859FBF81EEC3C7C0075388C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D859FBF71EEC3C7C0075388C /* Assets.xcassets */; };
 		D859FC031EEC3CA80075388C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D859FC021EEC3CA80075388C /* Main.storyboard */; };
@@ -32,6 +37,15 @@
 		5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.release.xcconfig"; sourceTree = "<group>"; };
 		C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMDoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8454AE61EF55C1000632E42 /* MarkdownEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownEditView.h; sourceTree = "<group>"; };
+		D8454AE71EF55C1000632E42 /* MarkdownEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownEditView.m; sourceTree = "<group>"; };
+		D8454AEA1EF55F2700632E42 /* FontHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontHelper.h; sourceTree = "<group>"; };
+		D8454AEB1EF55F2700632E42 /* FontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontHelper.m; sourceTree = "<group>"; };
+		D8454AF01EF5768200632E42 /* SyntaxHighLightStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighLightStorage.h; sourceTree = "<group>"; };
+		D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighLightStorage.m; sourceTree = "<group>"; };
+		D8454AF31EF57A9A00632E42 /* SyntaxHighLightConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighLightConfig.h; sourceTree = "<group>"; };
+		D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighLightConfig.m; sourceTree = "<group>"; };
+		D8454AF61EF62D1D00632E42 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
 		D859FBEB1EEC3C7C0075388C /* iMDoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FBEE1EEC3C7C0075388C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D859FBF21EEC3C7C0075388C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +114,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D8454AE91EF55EF800632E42 /* MarkdownEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D8454AE61EF55C1000632E42 /* MarkdownEditView.h */,
+				D8454AE71EF55C1000632E42 /* MarkdownEditView.m */,
+				D8454AF01EF5768200632E42 /* SyntaxHighLightStorage.h */,
+				D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */,
+				D8454AF31EF57A9A00632E42 /* SyntaxHighLightConfig.h */,
+				D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */,
+				D8454AEA1EF55F2700632E42 /* FontHelper.h */,
+				D8454AEB1EF55F2700632E42 /* FontHelper.m */,
+			);
+			name = MarkdownEdit;
+			sourceTree = "<group>";
+		};
 		D859FBE21EEC3C7C0075388C = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,7 @@
 		D859FBED1EEC3C7C0075388C /* iMDoes */ = {
 			isa = PBXGroup;
 			children = (
+				D8454AF61EF62D1D00632E42 /* markdown.css */,
 				D859FC121EEC3D410075388C /* Markdown */,
 				D859FC101EEC3D250075388C /* key-new-01.mp3 */,
 				D859FC0F1EEC3CD50075388C /* iMDoes.entitlements */,
@@ -130,6 +160,7 @@
 				D8F27C751EF17DC2008DB3F3 /* WindowController.m */,
 				D859FC041EEC3CCA0075388C /* ViewController.h */,
 				D859FC051EEC3CCA0075388C /* ViewController.m */,
+				D8454AE91EF55EF800632E42 /* MarkdownEdit */,
 				D859FC061EEC3CCA0075388C /* HtmlView.h */,
 				D859FC071EEC3CCA0075388C /* HtmlView.m */,
 				D859FC081EEC3CCA0075388C /* TitleAccessController.h */,
@@ -248,6 +279,7 @@
 				D859FC0E1EEC3CCA0075388C /* TitleAccessController.xib in Resources */,
 				D859FC111EEC3D250075388C /* key-new-01.mp3 in Resources */,
 				D859FC031EEC3CA80075388C /* Main.storyboard in Resources */,
+				D8454AF71EF62D1D00632E42 /* markdown.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +343,18 @@
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,
 				D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */,
 				D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */,
+				D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */,
 				D859FC281EEC3D4E0075388C /* MMHTMLParser.m in Sources */,
 				D859FC271EEC3D4E0075388C /* MMGenerator.m in Sources */,
 				D859FC261EEC3D4E0075388C /* MMElement.m in Sources */,
 				D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */,
+				D8454AF21EF5768200632E42 /* SyntaxHighLightStorage.m in Sources */,
+				D8454AF51EF57A9A00632E42 /* SyntaxHighLightConfig.m in Sources */,
 				D859FC291EEC3D4E0075388C /* MMMarkdown.m in Sources */,
 				D859FC0C1EEC3CCA0075388C /* HtmlView.m in Sources */,
 				D859FC251EEC3D4E0075388C /* MMDocument.m in Sources */,
 				D859FBF31EEC3C7C0075388C /* main.m in Sources */,
+				D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */,
 				D859FC0D1EEC3CCA0075388C /* TitleAccessController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
