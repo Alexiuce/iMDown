@@ -16,33 +16,29 @@
 #define COLOR_PURPLE       [NSColor colorWithRed:0.423 green:0.443 blue:0.768 alpha:1]
 #define COLOR_DARK_PURPLE  [NSColor colorWithRed:0.305 green:0.152 blue:0.603 alpha:1]
 #define COLOR_LIGHT_PINK   [NSColor colorWithRed:0.811 green:0 blue:0.603 alpha:1]
-#define COLOR_GREEN        [NSColor colorWithRed:0 green:0.549 blue:0 alpha:1]
+#define COLOR_YELLOW       [NSColor colorWithRed:0.811 green:0.671 blue:0.051 alpha:1]
 #define COLOR_BLUE_GRAY    [NSColor colorWithRed:0.576 green:0.631 blue:0.632 alpha:1]
 
 
 
-#define defaultAttribute ({NSFont *font  = [NSFont fontWithName:defaultFont size:[FontHelper bodyFont]];\
-                            @{NSFontAttributeName : font,NSForegroundColorAttributeName : [NSColor whiteColor],\
-                              NSBackgroundColorAttributeName : [NSColor clearColor]};})
+#define defaultAttribute @{NSFontAttributeName :[FontHelper defaultFont],\
+                           NSForegroundColorAttributeName : [NSColor whiteColor],\
+                           NSBackgroundColorAttributeName : [NSColor clearColor]}
 
-#define boldAttribute ({NSFont *font  = [NSFont fontWithName:boldFont size:[FontHelper bodyFont]];\
-                        @{NSFontAttributeName : font,NSForegroundColorAttributeName : COLOR_RED};})
+#define boldAttribute @{NSFontAttributeName:[FontHelper boldFont],NSForegroundColorAttributeName:COLOR_RED}
 
-#define italicAttribute ({NSFont *font  = [NSFont fontWithName:italicFont size:[FontHelper bodyFont]];\
-                          @{NSFontAttributeName : font,NSForegroundColorAttributeName : COLOR_RED};})
+#define italicAttribute @{NSFontAttributeName:[FontHelper italicFont],NSForegroundColorAttributeName:COLOR_LIGHT_RED}
 
-#define boldItalicAttribute ({NSFont *font  = [NSFont fontWithName:boldItalicFont size:[FontHelper bodyFont]];\
-                              @{NSFontAttributeName : font};})
+#define boldItalicAttribute @{NSFontAttributeName :[FontHelper boldItalicFont]}
 
-#define headerAttribute ({NSFont *font  = [NSFont fontWithName:boldFont size:[FontHelper bodyFont]];\
-                         @{NSFontAttributeName:font,NSForegroundColorAttributeName : COLOR_PURPLE};})
+#define headerAttribute @{NSFontAttributeName:[FontHelper headFont],NSForegroundColorAttributeName : COLOR_PURPLE}
 
 
 #define linkAttribute      @{NSForegroundColorAttributeName : COLOR_PURPLE}
 
 #define imageLinkAttribute @{NSForegroundColorAttributeName : COLOR_LIGHT_PINK}
 
-#define codeAttribute      @{NSForegroundColorAttributeName : COLOR_GREEN}
+#define codeAttribute      @{NSForegroundColorAttributeName : COLOR_YELLOW}
 
 #define listAttribute      @{NSForegroundColorAttributeName : COLOR_BLUE_GRAY}
 

@@ -10,15 +10,19 @@
 #import <AppKit/AppKit.h>
 
 
-APPKIT_EXTERN NSString * defaultFont;
-APPKIT_EXTERN NSString * boldFont;
-APPKIT_EXTERN NSString * italicFont;
-APPKIT_EXTERN NSString * boldItalicFont;
 
 
 @interface FontHelper : NSObject
 
 
-+ (CGFloat)bodyFont;
++ (NSFont *)defaultFont;
+
++ (NSFont *)headFont;
+
++ (NSFont *)boldFont;
+
++ (NSFont *)italicFont;
+
++ (NSFont *)boldItalicFont;
 
 @end

@@ -14,7 +14,7 @@ NSString * Header    = @"(((^#+|\\n#+)(.*)))";
 NSString * Link      = @"(\\[([^\\]]+)\\]\\(([^\\)]+)\\))";
 NSString * ImageLink = @"(!\\[([^\\]]+)\\]\\(([^\\)]+)\\))";
 NSString * Code      = @"(`(.*?)`)";
-NSString * CodeBlock = @"(```\\w*\\n[\\w\\s\\n]*\\n```)";
+NSString * CodeBlock = @"(```\\w*\\n[\\s\\S]*\\n```)";
 NSString * List      = @"((^\\-|\\n\\-|^\\*|\\n\\*)\\s)";
 NSString * Clear     = @"(^[\\w\\s\\$\\&\\+\\,\\:\\;\\=\\?\\@\\|\\'\\<\\>\\.\\^\\*\\(\\)\\%\\!\\-])";
 

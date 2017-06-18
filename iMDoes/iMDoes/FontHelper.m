@@ -11,21 +11,37 @@
 
 
 
-NSString * defaultFont = @"Menlo-Regular";
-NSString * boldFont = @"Menlo-Bold";
-NSString * italicFont = @"Menlo-Italic";
-NSString * boldItalicFont = @"Menlo-BoldItalic";
+static NSString * const defaultFont = @"Menlo-Regular";
+static NSString * const boldFont = @"Menlo-Bold";
+static NSString * const italicFont = @"Menlo-Italic";
+static NSString * const boldItalicFont = @"Menlo-BoldItalic";
 
-
+static CGFloat const fs = 15;
 
 
 
 @implementation FontHelper
 
 
-+ (CGFloat)bodyFont{
-    return  15;
-    
++ (NSFont *)defaultFont{
+   return  [NSFont fontWithName:defaultFont size:fs];
 }
+
++ (NSFont *)headFont{
+    return [NSFont systemFontOfSize:20 weight:NSFontWeightBold];
+}
+
++ (NSFont *)boldFont{
+    return  [NSFont fontWithName:boldFont size:fs];
+}
++ (NSFont *)italicFont{
+    return [NSFont fontWithName:italicFont size:fs];
+}
+
++ (NSFont *)boldItalicFont{
+    return [NSFont fontWithName:boldItalicFont size:fs];
+}
+
+
 
 @end
