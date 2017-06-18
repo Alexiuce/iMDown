@@ -13,6 +13,8 @@
 void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 
 
+static NSString * const MuteKey = @"setMuting";
+
 
 @interface TitleAccessController ()
 
@@ -21,6 +23,7 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 
 @property (nonatomic, assign) NSInteger currentState;
 
+@property (weak) IBOutlet NSButton *muteButton;
 
 @property (nonatomic, strong)id eventMonitor;
 @property (nonatomic, assign) SystemSoundID soundID;
@@ -47,6 +50,11 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
     [self addLocalMonitor];
     
     
+    BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
+    self.currentState = isMuted ?  NSOnState : NSOffState ;
+    self.muteButton.state = self.currentState;
+
+    
 }
 - (IBAction)clickButton:(NSButton *)sender {
     if ([self.delegate respondsToSelector:@selector(titleAccessDidSelectedItemType:)]) {
@@ -61,6 +69,9 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
     }else{
         [NSEvent removeMonitor:_eventMonitor];
     }
+    [[NSUserDefaults standardUserDefaults] setBool:self.currentState == NSOnState forKey:MuteKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     
     
 }
