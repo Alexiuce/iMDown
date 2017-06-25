@@ -143,5 +143,10 @@
 }
 
 
+- (void)convertPdf{
+    NSDocument *doc = [[NSDocument alloc]init];
+    [doc saveDocumentToPDF:nil];
+}
+
 
 @end
