@@ -30,6 +30,7 @@
 		D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC241EEC3D4E0075388C /* MMSpanParser.m */; };
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
 		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
+		F2F37BE11F034BB1002693CF /* MDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F37BE01F034BB1002693CF /* MDocument.m */; };
 		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		D8F27C741EF17DC2008DB3F3 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		D8F27C751EF17DC2008DB3F3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F2F37BDF1F034BB1002693CF /* MDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDocument.h; sourceTree = "<group>"; };
+		F2F37BE01F034BB1002693CF /* MDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 		D859FBE21EEC3C7C0075388C = {
 			isa = PBXGroup;
 			children = (
+				F2F37BDE1F034B97002693CF /* MDocument */,
 				D859FBED1EEC3C7C0075388C /* iMDoes */,
 				D859FBEC1EEC3C7C0075388C /* Products */,
 				8C090CB56E8541958444DEA3 /* Pods */,
@@ -206,6 +210,15 @@
 				D859FC241EEC3D4E0075388C /* MMSpanParser.m */,
 			);
 			path = Markdown;
+			sourceTree = "<group>";
+		};
+		F2F37BDE1F034B97002693CF /* MDocument */ = {
+			isa = PBXGroup;
+			children = (
+				F2F37BDF1F034BB1002693CF /* MDocument.h */,
+				F2F37BE01F034BB1002693CF /* MDocument.m */,
+			);
+			path = MDocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +355,7 @@
 				D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */,
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,
 				D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */,
+				F2F37BE11F034BB1002693CF /* MDocument.m in Sources */,
 				D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */,
 				D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */,
 				D859FC281EEC3D4E0075388C /* MMHTMLParser.m in Sources */,

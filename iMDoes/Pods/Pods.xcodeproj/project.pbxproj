@@ -7,539 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011C3644C3723EFE3DE95F1AE2F7A9DB /* ACEThemeNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3ED311889168021BAF71A0EC660FAD0 /* ACEThemeNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18DFDC348707B79E1AF4CDCF5E87CD7F /* ACEModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 897421E77115D0E5EE55C74BA3611E91 /* ACEModes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31ACFD5B91C6E5B8E5B442F87115B39F /* ACEStringFromBool.h in Headers */ = {isa = PBXBuildFile; fileRef = CABA4457AD36BE22C60D018E434FDE86 /* ACEStringFromBool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34BF1BF4B76F5C73DBFADDE33ABD8EBC /* ACEKeyboardHandlerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AA60A6A296B815A0913E306C4D48 /* ACEKeyboardHandlerNames.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		35EA38BC464229734500F90BDC32930F /* NSInvocation+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80AA7AC16CAF0FB01BD727C5C9DE7B /* NSInvocation+MainThread.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		479D4BABC4E40C9A0D0DDE6DE23B5F33 /* ACEKeyboardHandlerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AA4421C234E8205334709E470E602D /* ACEKeyboardHandlerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49430A2B9FD26D009021DF6265627721 /* NSString+EscapeForJavaScript.h in Headers */ = {isa = PBXBuildFile; fileRef = F888D45869C99A235F27A91EF55EBF67 /* NSString+EscapeForJavaScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53492A610613E5A6A0BFDEA2405D3614 /* ACEKeyboardHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = A84443143D35E5F71DB1A1D04ADD1529 /* ACEKeyboardHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56125922CE0CC4AD939E71C58E12CB85 /* NSInvocation+MainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15D16C82F34F2EC04B2793EEDCA0F /* NSInvocation+MainThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76C30A281A382910EF5C8D2C70607C75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A45ED696BFA2613FB341A31D57D104 /* Cocoa.framework */; };
-		7B9515969717E7183DCFDF27B7449360 /* ACEView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758199683061B834695E64EF42735E7D /* ACEView-dummy.m */; };
-		7DF8EA2852F9C8FD41A077FB4E5570E6 /* ACEView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5893B3589CA702DAB9DEE8628E7C55 /* ACEView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BF79FD35B4A452CF0D205BBE9F67C03 /* Pods-iMDoes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2FADFCEFA38F447B75B7749F0C4ABC /* Pods-iMDoes-dummy.m */; };
-		9D8C49A7883F5C7697C651C5FAC34230 /* ACELogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A2E3A2A24721D8977CFAE87CC2AE89 /* ACELogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F7F75730F1E635FCAA7B95989DBB54 /* ACEModeNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E1B08BB663E92B353F2676E4177AEC4 /* ACEModeNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9C9715799A0F6926937D17A1B0B4319 /* ACELogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC01FF640CC4D356F0C6B952D4210E9 /* ACELogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8E189477A34F7BF560A43E677E99CC7 /* ACEThemes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F395C442031F201839D55E60E2CB3DF /* ACEThemes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0084B234DDC497D4C3A6ECBC7ABC3A2 /* ACEView.h in Headers */ = {isa = PBXBuildFile; fileRef = 743D4A7BBA98FB531F9E2786E17A07AC /* ACEView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3645A83A808BDBF8766C4809E149C0C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB58233D26A456DF9C5ADF0C71E9A5D /* WebKit.framework */; };
-		C4EB52F6DB1EB1E3165BA2BBC3AA946C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A45ED696BFA2613FB341A31D57D104 /* Cocoa.framework */; };
-		D95EBA9FDBB49AD775F7C0754EE5C709 /* ACEThemeNames.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2AF6DAD7EFBED1B84743B2FBA9CC0F /* ACEThemeNames.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E7D63D10BD7CD060C80ED02FCED5E5C7 /* NSString+EscapeForJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = DC10674248C28DB074B15C56EA77936A /* NSString+EscapeForJavaScript.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F5F7B06D9A503DF765FC9C4AD201FB81 /* ACERange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3E964D440F7D3BD58D1BFED1829417 /* ACERange.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9D34E1D8C47AB6CD9BADCD6745B3BF2 /* ACEModeNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395AB27F47D3E8BAE30A634EC297052 /* ACEModeNames.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		12EE10D5A7D291636EAE37A1A06F8E36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		19F508FE19AE55D4568507E56E2A312F /* Pods-iMDoes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2FADFCEFA38F447B75B7749F0C4ABC /* Pods-iMDoes-dummy.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		525179A1F77853A921DC7DD09AF34276 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A28382A4A1601845E27822B7909FBFD;
-			remoteInfo = ACEView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0280BE450D30D49E19A68959E5171936 /* mode-javascript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-javascript.js"; path = "ACEView/Dependencies/ace/src/mode-javascript.js"; sourceTree = "<group>"; };
-		06692E99381C9AB1D6808AFAB9848527 /* ACEView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACEView.xcconfig; sourceTree = "<group>"; };
-		07DE35FBFA89825A7961FAFBC946D8F7 /* mode-json.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-json.js"; path = "ACEView/Dependencies/ace/src/mode-json.js"; sourceTree = "<group>"; };
-		09ABB19AA90DF98122C3E15FF363624B /* mode-typescript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-typescript.js"; path = "ACEView/Dependencies/ace/src/mode-typescript.js"; sourceTree = "<group>"; };
-		0A0D55CBA9FD27D8DE161EEB03929383 /* mode-mask.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-mask.js"; path = "ACEView/Dependencies/ace/src/mode-mask.js"; sourceTree = "<group>"; };
-		0AC28EC8FE4D92BEAF4A3D7E1DECC9CF /* theme-terminal.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-terminal.js"; path = "ACEView/Dependencies/ace/src/theme-terminal.js"; sourceTree = "<group>"; };
-		0B0559E016E065C31F967BE7C6AA118E /* mode-textile.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-textile.js"; path = "ACEView/Dependencies/ace/src/mode-textile.js"; sourceTree = "<group>"; };
-		0BB08E5A5E4C49959100F614EBE50A69 /* mode-sh.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-sh.js"; path = "ACEView/Dependencies/ace/src/mode-sh.js"; sourceTree = "<group>"; };
 		0BC176A131E4889A8450A1ED1A02DB9C /* Pods-iMDoes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMDoes-resources.sh"; sourceTree = "<group>"; };
-		0F5E382DCA749DFF691465D5F1668EC2 /* mode-lua.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-lua.js"; path = "ACEView/Dependencies/ace/src/mode-lua.js"; sourceTree = "<group>"; };
-		122318B854D3C3FE651DDF972C80B3F1 /* theme-clouds_midnight.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-clouds_midnight.js"; path = "ACEView/Dependencies/ace/src/theme-clouds_midnight.js"; sourceTree = "<group>"; };
-		142566445928EF347497F39F0C2317A4 /* mode-julia.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-julia.js"; path = "ACEView/Dependencies/ace/src/mode-julia.js"; sourceTree = "<group>"; };
-		165384F366F4C55932BF267D74E97250 /* mode-xml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-xml.js"; path = "ACEView/Dependencies/ace/src/mode-xml.js"; sourceTree = "<group>"; };
-		168B0569476F80528F46D46AB4E90C39 /* mode-vbscript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-vbscript.js"; path = "ACEView/Dependencies/ace/src/mode-vbscript.js"; sourceTree = "<group>"; };
-		17DE719A0DEE0FE4F2F46CDA83997D6A /* mode-glsl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-glsl.js"; path = "ACEView/Dependencies/ace/src/mode-glsl.js"; sourceTree = "<group>"; };
-		18839F695F1CDAF05EBD88F36C92C9AA /* mode-praat.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-praat.js"; path = "ACEView/Dependencies/ace/src/mode-praat.js"; sourceTree = "<group>"; };
-		1BE324011807EE8FBE86EC651C797908 /* mode-jsx.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-jsx.js"; path = "ACEView/Dependencies/ace/src/mode-jsx.js"; sourceTree = "<group>"; };
-		1CC01FF640CC4D356F0C6B952D4210E9 /* ACELogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACELogger.m; path = ACEView/Source/Utilities/ACELogger.m; sourceTree = "<group>"; };
-		1CFCFB68604D5E90F0130903301D50FD /* mode-groovy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-groovy.js"; path = "ACEView/Dependencies/ace/src/mode-groovy.js"; sourceTree = "<group>"; };
-		201AD555663065418EC53E19F3EB0617 /* mode-haskell.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-haskell.js"; path = "ACEView/Dependencies/ace/src/mode-haskell.js"; sourceTree = "<group>"; };
-		20A45ED696BFA2613FB341A31D57D104 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		215ED79BB1D90CA1342C70143A6FD88C /* mode-d.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-d.js"; path = "ACEView/Dependencies/ace/src/mode-d.js"; sourceTree = "<group>"; };
-		21C35040FB2191A504FCE25C956062D8 /* mode-diff.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-diff.js"; path = "ACEView/Dependencies/ace/src/mode-diff.js"; sourceTree = "<group>"; };
-		21D9B055ADEF787598283CC0F97FC4A7 /* mode-livescript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-livescript.js"; path = "ACEView/Dependencies/ace/src/mode-livescript.js"; sourceTree = "<group>"; };
-		2235763EFE8E87F7DB5F648710A8DEE5 /* theme-github.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-github.js"; path = "ACEView/Dependencies/ace/src/theme-github.js"; sourceTree = "<group>"; };
-		240C336D56D25FD2DD894B799CFBFC45 /* mode-stylus.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-stylus.js"; path = "ACEView/Dependencies/ace/src/mode-stylus.js"; sourceTree = "<group>"; };
-		252A3CCCC41DF2FA7D630253508D781B /* mode-lucene.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-lucene.js"; path = "ACEView/Dependencies/ace/src/mode-lucene.js"; sourceTree = "<group>"; };
-		2649E08702F65203E20C9CFB2E490934 /* mode-coffee.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-coffee.js"; path = "ACEView/Dependencies/ace/src/mode-coffee.js"; sourceTree = "<group>"; };
-		26BB0B302998F5356844C4A22BC05727 /* keybinding-emacs.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "keybinding-emacs.js"; path = "ACEView/Dependencies/ace/src/keybinding-emacs.js"; sourceTree = "<group>"; };
-		278EBB3F77CC71A4084D4E8F54A501B6 /* worker-lua.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-lua.js"; path = "ACEView/Dependencies/ace/src/worker-lua.js"; sourceTree = "<group>"; };
-		27F6AEA7AD774689E83B35162B9B7071 /* mode-lisp.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-lisp.js"; path = "ACEView/Dependencies/ace/src/mode-lisp.js"; sourceTree = "<group>"; };
-		28495489D5965C5EE8FA1BA117179584 /* theme-mono_industrial.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-mono_industrial.js"; path = "ACEView/Dependencies/ace/src/theme-mono_industrial.js"; sourceTree = "<group>"; };
-		28ADF4F223E15495B9093E0FC0A095D2 /* mode-ftl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ftl.js"; path = "ACEView/Dependencies/ace/src/mode-ftl.js"; sourceTree = "<group>"; };
-		2A6D9D452842F6028078CB6F92ECE203 /* mode-jack.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-jack.js"; path = "ACEView/Dependencies/ace/src/mode-jack.js"; sourceTree = "<group>"; };
-		2B4083B83BB3243DE0CC894AD1352CFB /* ext-static_highlight.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-static_highlight.js"; path = "ACEView/Dependencies/ace/src/ext-static_highlight.js"; sourceTree = "<group>"; };
-		2E3E964D440F7D3BD58D1BFED1829417 /* ACERange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACERange.h; path = ACEView/Source/Utilities/Headers/ACERange.h; sourceTree = "<group>"; };
-		3026823FBCD9FC1061941E04377EE26C /* mode-space.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-space.js"; path = "ACEView/Dependencies/ace/src/mode-space.js"; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		3116A20CBA595FF29C9DEA7E198946E1 /* Pods-iMDoes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMDoes-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31766A65729AD120CD91FAD3E566C173 /* mode-html_ruby.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-html_ruby.js"; path = "ACEView/Dependencies/ace/src/mode-html_ruby.js"; sourceTree = "<group>"; };
-		31D1CFAD2E5D12A2F1C879C04BADED9D /* ext-chromevox.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-chromevox.js"; path = "ACEView/Dependencies/ace/src/ext-chromevox.js"; sourceTree = "<group>"; };
-		332116EC05E0631D653214C59D768D00 /* mode-mel.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-mel.js"; path = "ACEView/Dependencies/ace/src/mode-mel.js"; sourceTree = "<group>"; };
-		3395AB27F47D3E8BAE30A634EC297052 /* ACEModeNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEModeNames.m; path = ACEView/Source/Utilities/ACEModeNames.m; sourceTree = "<group>"; };
-		340C759AF9D10D7B5F9F6A59852410B9 /* mode-cobol.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-cobol.js"; path = "ACEView/Dependencies/ace/src/mode-cobol.js"; sourceTree = "<group>"; };
-		3595C345100C347A2034ADFEA44E7A7C /* theme-vibrant_ink.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-vibrant_ink.js"; path = "ACEView/Dependencies/ace/src/theme-vibrant_ink.js"; sourceTree = "<group>"; };
-		360BB268E9809FB10AE3A7C8CE91453E /* theme-chrome.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-chrome.js"; path = "ACEView/Dependencies/ace/src/theme-chrome.js"; sourceTree = "<group>"; };
-		37C1F242C588F10F1F282472A45386BA /* mode-sass.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-sass.js"; path = "ACEView/Dependencies/ace/src/mode-sass.js"; sourceTree = "<group>"; };
-		37FC4FD7787CB01E600BC5A0BF985B7E /* theme-solarized_dark.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-solarized_dark.js"; path = "ACEView/Dependencies/ace/src/theme-solarized_dark.js"; sourceTree = "<group>"; };
-		38E011AD8AA4ADA8D1483DFB7DA72267 /* mode-jsoniq.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-jsoniq.js"; path = "ACEView/Dependencies/ace/src/mode-jsoniq.js"; sourceTree = "<group>"; };
-		394DD866596EEE59D2FF2B2049CF2B9E /* mode-curly.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-curly.js"; path = "ACEView/Dependencies/ace/src/mode-curly.js"; sourceTree = "<group>"; };
-		3CFD230C650D6AC314733702F8BBF708 /* mode-rdoc.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-rdoc.js"; path = "ACEView/Dependencies/ace/src/mode-rdoc.js"; sourceTree = "<group>"; };
-		40C6E7740D43B03A3B7A72EAB6DED6E7 /* theme-kuroir.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-kuroir.js"; path = "ACEView/Dependencies/ace/src/theme-kuroir.js"; sourceTree = "<group>"; };
-		412115C8806EBEC1D8AC30618D3AF846 /* theme-clouds.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-clouds.js"; path = "ACEView/Dependencies/ace/src/theme-clouds.js"; sourceTree = "<group>"; };
-		42A4C1D474E7690054ADAFDD2E04851B /* ext-modelist.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-modelist.js"; path = "ACEView/Dependencies/ace/src/ext-modelist.js"; sourceTree = "<group>"; };
-		42A8A08718F70C5E3E005E93E0BFD1FF /* theme-merbivore.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-merbivore.js"; path = "ACEView/Dependencies/ace/src/theme-merbivore.js"; sourceTree = "<group>"; };
-		459108630E29C0C4DA7B7DBC5714C4CA /* worker-html.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-html.js"; path = "ACEView/Dependencies/ace/src/worker-html.js"; sourceTree = "<group>"; };
-		46896A9B637AC0812079FF245C06624E /* mode-text.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-text.js"; path = "ACEView/Dependencies/ace/src/mode-text.js"; sourceTree = "<group>"; };
-		48F799BB83ABBF5BBA6FF57FBFD69401 /* ext-statusbar.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-statusbar.js"; path = "ACEView/Dependencies/ace/src/ext-statusbar.js"; sourceTree = "<group>"; };
-		4A6D529CE4DA48ECADE174FADB9EBF93 /* theme-tomorrow_night.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-tomorrow_night.js"; path = "ACEView/Dependencies/ace/src/theme-tomorrow_night.js"; sourceTree = "<group>"; };
-		4C658CABD6FE4F9DE7D0E13431853FAC /* ext-old_ie.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-old_ie.js"; path = "ACEView/Dependencies/ace/src/ext-old_ie.js"; sourceTree = "<group>"; };
-		4D033B39D4B660D86622FDC84775E603 /* mode-ruby.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ruby.js"; path = "ACEView/Dependencies/ace/src/mode-ruby.js"; sourceTree = "<group>"; };
-		4D5893B3589CA702DAB9DEE8628E7C55 /* ACEView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEView.m; path = ACEView/Source/ACEView.m; sourceTree = "<group>"; };
-		4F1AEA23753A1D1EA68058772EB50602 /* mode-rhtml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-rhtml.js"; path = "ACEView/Dependencies/ace/src/mode-rhtml.js"; sourceTree = "<group>"; };
-		4F395C442031F201839D55E60E2CB3DF /* ACEThemes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEThemes.h; path = ACEView/Source/Utilities/Headers/ACEThemes.h; sourceTree = "<group>"; };
-		4FB1CE7008B4E0B0C7EACD0EBFCEAD76 /* mode-rust.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-rust.js"; path = "ACEView/Dependencies/ace/src/mode-rust.js"; sourceTree = "<group>"; };
-		52B91FBFA18B20CE7C7999F9BAE2F678 /* mode-makefile.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-makefile.js"; path = "ACEView/Dependencies/ace/src/mode-makefile.js"; sourceTree = "<group>"; };
 		52BB679B413E536D4852821BE16DACDB /* Pods-iMDoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMDoes.debug.xcconfig"; sourceTree = "<group>"; };
-		52D6BF228BAECC69F68B60CDC5D3C454 /* mode-snippets.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-snippets.js"; path = "ACEView/Dependencies/ace/src/mode-snippets.js"; sourceTree = "<group>"; };
-		5364BE36C96C9667CB32A58FBD583C2C /* theme-twilight.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-twilight.js"; path = "ACEView/Dependencies/ace/src/theme-twilight.js"; sourceTree = "<group>"; };
-		54EF29FB55F31F501F8F12A118EE0358 /* mode-less.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-less.js"; path = "ACEView/Dependencies/ace/src/mode-less.js"; sourceTree = "<group>"; };
 		5581209AE9DECB097C4BF241C4CA4187 /* Pods-iMDoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMDoes.release.xcconfig"; sourceTree = "<group>"; };
-		55ED50AFC6B345FCD565B84A99F2A964 /* mode-smarty.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-smarty.js"; path = "ACEView/Dependencies/ace/src/mode-smarty.js"; sourceTree = "<group>"; };
-		57D83865C8C1B439AB364EE508CC3FC6 /* mode-vhdl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-vhdl.js"; path = "ACEView/Dependencies/ace/src/mode-vhdl.js"; sourceTree = "<group>"; };
-		59EE599B25F02BE3FBE22A4D37D73E52 /* mode-gitignore.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-gitignore.js"; path = "ACEView/Dependencies/ace/src/mode-gitignore.js"; sourceTree = "<group>"; };
-		5B8843A8CB2949D08771D5985FEB6667 /* worker-json.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-json.js"; path = "ACEView/Dependencies/ace/src/worker-json.js"; sourceTree = "<group>"; };
 		5C2FADFCEFA38F447B75B7749F0C4ABC /* Pods-iMDoes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMDoes-dummy.m"; sourceTree = "<group>"; };
-		5CDBAA4FB4FDCF8497F6F80C5F693DCA /* theme-tomorrow_night_bright.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-tomorrow_night_bright.js"; path = "ACEView/Dependencies/ace/src/theme-tomorrow_night_bright.js"; sourceTree = "<group>"; };
-		5D8F24261F8B42AA2CF8800386D5F7FD /* mode-actionscript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-actionscript.js"; path = "ACEView/Dependencies/ace/src/mode-actionscript.js"; sourceTree = "<group>"; };
-		5EA48FC8CE78396B1B6100931286492A /* worker-coffee.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-coffee.js"; path = "ACEView/Dependencies/ace/src/worker-coffee.js"; sourceTree = "<group>"; };
-		6056A0A690827CEB8543300E1A8E6995 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = ACEView/HTML/index.html; sourceTree = "<group>"; };
-		60D644E1D4EFB04D03AE861EDFFF677D /* theme-dawn.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-dawn.js"; path = "ACEView/Dependencies/ace/src/theme-dawn.js"; sourceTree = "<group>"; };
-		643C1F7C04390ED3C10C6042F82F4E22 /* mode-properties.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-properties.js"; path = "ACEView/Dependencies/ace/src/mode-properties.js"; sourceTree = "<group>"; };
-		681095CDD76F18EDB9DA0FBEF23DC00E /* mode-lsl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-lsl.js"; path = "ACEView/Dependencies/ace/src/mode-lsl.js"; sourceTree = "<group>"; };
-		6922837458A02963EFDFA544F86971C3 /* mode-logiql.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-logiql.js"; path = "ACEView/Dependencies/ace/src/mode-logiql.js"; sourceTree = "<group>"; };
-		6982D7320D2CB14094D75A75B5FEE8FD /* mode-tcl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-tcl.js"; path = "ACEView/Dependencies/ace/src/mode-tcl.js"; sourceTree = "<group>"; };
-		6B8E34E8C4E2642074D83EB9E6576087 /* ext-spellcheck.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-spellcheck.js"; path = "ACEView/Dependencies/ace/src/ext-spellcheck.js"; sourceTree = "<group>"; };
-		6D80AA7AC16CAF0FB01BD727C5C9DE7B /* NSInvocation+MainThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+MainThread.m"; path = "ACEView/Source/Categories/NSInvocation+MainThread.m"; sourceTree = "<group>"; };
-		6E21C50F341C9EC5C4790F76EB7A0696 /* mode-gherkin.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-gherkin.js"; path = "ACEView/Dependencies/ace/src/mode-gherkin.js"; sourceTree = "<group>"; };
-		6ED19C758119A86E8D12F449818AEF81 /* mode-liquid.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-liquid.js"; path = "ACEView/Dependencies/ace/src/mode-liquid.js"; sourceTree = "<group>"; };
-		711D09D59B2B470E425F7C6583533594 /* mode-prolog.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-prolog.js"; path = "ACEView/Dependencies/ace/src/mode-prolog.js"; sourceTree = "<group>"; };
-		71AC12531F7C297C1F4D7C858E33BC1B /* mode-r.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-r.js"; path = "ACEView/Dependencies/ace/src/mode-r.js"; sourceTree = "<group>"; };
-		71C078C39B42339DD9BD9864D70662C6 /* mode-scheme.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-scheme.js"; path = "ACEView/Dependencies/ace/src/mode-scheme.js"; sourceTree = "<group>"; };
-		7235D71005CAE7B5D39127C8E9F1AA9C /* mode-dot.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-dot.js"; path = "ACEView/Dependencies/ace/src/mode-dot.js"; sourceTree = "<group>"; };
-		73E7A559865B1E9BA31F74EF7A9953BF /* mode-forth.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-forth.js"; path = "ACEView/Dependencies/ace/src/mode-forth.js"; sourceTree = "<group>"; };
-		743BBAFC414976947735635F25437537 /* mode-c_cpp.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-c_cpp.js"; path = "ACEView/Dependencies/ace/src/mode-c_cpp.js"; sourceTree = "<group>"; };
-		743D4A7BBA98FB531F9E2786E17A07AC /* ACEView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEView.h; path = ACEView/Source/Headers/ACEView.h; sourceTree = "<group>"; };
-		758199683061B834695E64EF42735E7D /* ACEView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACEView-dummy.m"; sourceTree = "<group>"; };
-		75A1708D25DFC1D305A77BBA51AD1F48 /* ext-settings_menu.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-settings_menu.js"; path = "ACEView/Dependencies/ace/src/ext-settings_menu.js"; sourceTree = "<group>"; };
-		75B983B468963675C2D3BA759077FF18 /* ext-split.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-split.js"; path = "ACEView/Dependencies/ace/src/ext-split.js"; sourceTree = "<group>"; };
-		76C2B081BCB06C92DC6D112F78D0E038 /* mode-latex.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-latex.js"; path = "ACEView/Dependencies/ace/src/mode-latex.js"; sourceTree = "<group>"; };
-		77E859566A956C5AC038AA44C24AAD47 /* mode-soy_template.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-soy_template.js"; path = "ACEView/Dependencies/ace/src/mode-soy_template.js"; sourceTree = "<group>"; };
-		7A5417BCAD419D77FD5217195DE4951A /* mode-ada.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ada.js"; path = "ACEView/Dependencies/ace/src/mode-ada.js"; sourceTree = "<group>"; };
-		7A63D2B94E9C73A0CDA0E55E552D2576 /* mode-pascal.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-pascal.js"; path = "ACEView/Dependencies/ace/src/mode-pascal.js"; sourceTree = "<group>"; };
-		7B1A3B9065FF77072AF55186386D3FF8 /* libACEView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libACEView.a; path = libACEView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6E10A387BABEBC77B4B435A12815A5 /* theme-solarized_light.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-solarized_light.js"; path = "ACEView/Dependencies/ace/src/theme-solarized_light.js"; sourceTree = "<group>"; };
-		7E1B08BB663E92B353F2676E4177AEC4 /* ACEModeNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEModeNames.h; path = ACEView/Source/Utilities/Headers/ACEModeNames.h; sourceTree = "<group>"; };
-		7F1D565F24BD8E8F4621CA58AB15828D /* mode-eiffel.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-eiffel.js"; path = "ACEView/Dependencies/ace/src/mode-eiffel.js"; sourceTree = "<group>"; };
-		7F8E13A0804ABA7298DBEA9F2C4F4E7F /* mode-elixir.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-elixir.js"; path = "ACEView/Dependencies/ace/src/mode-elixir.js"; sourceTree = "<group>"; };
-		7FDB9B9641FF9F0C032200822A0A687E /* mode-matlab.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-matlab.js"; path = "ACEView/Dependencies/ace/src/mode-matlab.js"; sourceTree = "<group>"; };
-		814C605DEE2CC4E47E886F52D85545E5 /* mode-vala.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-vala.js"; path = "ACEView/Dependencies/ace/src/mode-vala.js"; sourceTree = "<group>"; };
-		83C3C6BFE67AD2DAE66744371439F791 /* ACEView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACEView-prefix.pch"; sourceTree = "<group>"; };
-		840790F751CE42ECA454F7C213396B15 /* mode-erlang.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-erlang.js"; path = "ACEView/Dependencies/ace/src/mode-erlang.js"; sourceTree = "<group>"; };
-		845E8971ECC92B010B47D2A20A9DD6C5 /* theme-ambiance.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-ambiance.js"; path = "ACEView/Dependencies/ace/src/theme-ambiance.js"; sourceTree = "<group>"; };
-		87A05B2E68ACCE7F0EC34E3403201CA9 /* mode-applescript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-applescript.js"; path = "ACEView/Dependencies/ace/src/mode-applescript.js"; sourceTree = "<group>"; };
-		87DE59E839A658AF83E3415DADD33C41 /* mode-assembly_x86.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-assembly_x86.js"; path = "ACEView/Dependencies/ace/src/mode-assembly_x86.js"; sourceTree = "<group>"; };
-		886E3416BD97701C259FFF46322466F6 /* mode-luapage.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-luapage.js"; path = "ACEView/Dependencies/ace/src/mode-luapage.js"; sourceTree = "<group>"; };
-		897421E77115D0E5EE55C74BA3611E91 /* ACEModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEModes.h; path = ACEView/Source/Utilities/Headers/ACEModes.h; sourceTree = "<group>"; };
-		89DE406AD247A1A4C18F9E721D4C165B /* mode-coldfusion.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-coldfusion.js"; path = "ACEView/Dependencies/ace/src/mode-coldfusion.js"; sourceTree = "<group>"; };
-		8A93CFA84EED7EE410BE096661249555 /* mode-haxe.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-haxe.js"; path = "ACEView/Dependencies/ace/src/mode-haxe.js"; sourceTree = "<group>"; };
-		8FE19440C0BEF39F4E3E8324FE4C8A2C /* mode-abap.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-abap.js"; path = "ACEView/Dependencies/ace/src/mode-abap.js"; sourceTree = "<group>"; };
-		905F2660164C034471D4181E85079DB2 /* mode-io.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-io.js"; path = "ACEView/Dependencies/ace/src/mode-io.js"; sourceTree = "<group>"; };
-		91C72D1C5D98C7C71D485A488904EBE7 /* ext-beautify.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-beautify.js"; path = "ACEView/Dependencies/ace/src/ext-beautify.js"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		951ED6C1864F2B72C03E6D72B640572E /* worker-javascript.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-javascript.js"; path = "ACEView/Dependencies/ace/src/worker-javascript.js"; sourceTree = "<group>"; };
-		953CD309D39DA9AF2E4490BDA1B1CD3E /* worker-xquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-xquery.js"; path = "ACEView/Dependencies/ace/src/worker-xquery.js"; sourceTree = "<group>"; };
-		96357073D5CEC8BB90C10D6A6ADCA032 /* theme-idle_fingers.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-idle_fingers.js"; path = "ACEView/Dependencies/ace/src/theme-idle_fingers.js"; sourceTree = "<group>"; };
-		98AA4421C234E8205334709E470E602D /* ACEKeyboardHandlerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEKeyboardHandlerNames.h; path = ACEView/Source/Utilities/Headers/ACEKeyboardHandlerNames.h; sourceTree = "<group>"; };
 		99A66D5D04F711D796C9E933E92B4851 /* Pods-iMDoes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMDoes-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B3064AC42443200A6E3078A6886AB6E /* theme-kr_theme.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-kr_theme.js"; path = "ACEView/Dependencies/ace/src/theme-kr_theme.js"; sourceTree = "<group>"; };
-		9E30B7BFEF444618E78F81263EBC9559 /* mode-autohotkey.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-autohotkey.js"; path = "ACEView/Dependencies/ace/src/mode-autohotkey.js"; sourceTree = "<group>"; };
-		9F33D301D5B168370A4A7F34A01D2532 /* mode-java.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-java.js"; path = "ACEView/Dependencies/ace/src/mode-java.js"; sourceTree = "<group>"; };
-		9F4007ED5B16F34DB4CE302C0BD8F9E6 /* mode-plain_text.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-plain_text.js"; path = "ACEView/Dependencies/ace/src/mode-plain_text.js"; sourceTree = "<group>"; };
-		A6B0419320799A0FF41ACE652B7D7352 /* theme-monokai.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-monokai.js"; path = "ACEView/Dependencies/ace/src/theme-monokai.js"; sourceTree = "<group>"; };
-		A7E72634CDC805B3E7985F9A5EB7C9A3 /* mode-c9search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-c9search.js"; path = "ACEView/Dependencies/ace/src/mode-c9search.js"; sourceTree = "<group>"; };
-		A84443143D35E5F71DB1A1D04ADD1529 /* ACEKeyboardHandlers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEKeyboardHandlers.h; path = ACEView/Source/Utilities/Headers/ACEKeyboardHandlers.h; sourceTree = "<group>"; };
-		A977AA034BC213A2FD81D5BD506E2147 /* ext-keybinding_menu.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-keybinding_menu.js"; path = "ACEView/Dependencies/ace/src/ext-keybinding_menu.js"; sourceTree = "<group>"; };
-		A9B6AA60A6A296B815A0913E306C4D48 /* ACEKeyboardHandlerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEKeyboardHandlerNames.m; path = ACEView/Source/Utilities/ACEKeyboardHandlerNames.m; sourceTree = "<group>"; };
-		AA7D823B35A898996DAD930747872890 /* mode-protobuf.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-protobuf.js"; path = "ACEView/Dependencies/ace/src/mode-protobuf.js"; sourceTree = "<group>"; };
-		AA8676C67DD46CF999FF4F47F0662E72 /* mode-python.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-python.js"; path = "ACEView/Dependencies/ace/src/mode-python.js"; sourceTree = "<group>"; };
-		AB7CEC56216B0511BD5537E8BAC681B4 /* theme-chaos.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-chaos.js"; path = "ACEView/Dependencies/ace/src/theme-chaos.js"; sourceTree = "<group>"; };
-		ABB58233D26A456DF9C5ADF0C71E9A5D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		ACB82A79A66276EAC21F481AC0741D36 /* mode-pgsql.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-pgsql.js"; path = "ACEView/Dependencies/ace/src/mode-pgsql.js"; sourceTree = "<group>"; };
-		ACEF62B6E420C16EFA285E79B4D9D41D /* mode-csharp.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-csharp.js"; path = "ACEView/Dependencies/ace/src/mode-csharp.js"; sourceTree = "<group>"; };
-		ADA5B3BE06F2D43980C80C08B427A4A4 /* mode-tex.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-tex.js"; path = "ACEView/Dependencies/ace/src/mode-tex.js"; sourceTree = "<group>"; };
-		B0CDF201EDD540B8A825D616249C0727 /* mode-sql.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-sql.js"; path = "ACEView/Dependencies/ace/src/mode-sql.js"; sourceTree = "<group>"; };
-		B140B80A45AFF39684BAA3624ED2360C /* mode-scss.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-scss.js"; path = "ACEView/Dependencies/ace/src/mode-scss.js"; sourceTree = "<group>"; };
-		B1E492ECD77D92185D9A412A7DD697CE /* keybinding-vim.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "keybinding-vim.js"; path = "ACEView/Dependencies/ace/src/keybinding-vim.js"; sourceTree = "<group>"; };
-		B25D2B7AB6AE5C17D9FFEA6C46C207B1 /* mode-batchfile.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-batchfile.js"; path = "ACEView/Dependencies/ace/src/mode-batchfile.js"; sourceTree = "<group>"; };
-		B352745C836DEB33CD73611A9443A01F /* mode-ejs.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ejs.js"; path = "ACEView/Dependencies/ace/src/mode-ejs.js"; sourceTree = "<group>"; };
-		B4ABBA3A76CEE84CCBC09FF204336344 /* mode-nix.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-nix.js"; path = "ACEView/Dependencies/ace/src/mode-nix.js"; sourceTree = "<group>"; };
-		B4ADB59053854DE5B57D580AC471F4FA /* ext-themelist.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-themelist.js"; path = "ACEView/Dependencies/ace/src/ext-themelist.js"; sourceTree = "<group>"; };
-		B51D78A8DEE3F5B15CA96C957495F596 /* mode-twig.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-twig.js"; path = "ACEView/Dependencies/ace/src/mode-twig.js"; sourceTree = "<group>"; };
-		B53372E9FC6DF0B87D596ECD2C1D3E22 /* mode-ocaml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ocaml.js"; path = "ACEView/Dependencies/ace/src/mode-ocaml.js"; sourceTree = "<group>"; };
-		B7A260377AEFE2C11573ECF4DB710E50 /* worker-css.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-css.js"; path = "ACEView/Dependencies/ace/src/worker-css.js"; sourceTree = "<group>"; };
-		B7D2067955307666E8369748D36FEFA2 /* theme-eclipse.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-eclipse.js"; path = "ACEView/Dependencies/ace/src/theme-eclipse.js"; sourceTree = "<group>"; };
-		B8305CFE89135966011F52534C21BD0B /* mode-css.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-css.js"; path = "ACEView/Dependencies/ace/src/mode-css.js"; sourceTree = "<group>"; };
-		B83BE4C93D14B003AF0D6559BE6031E5 /* worker-php.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "worker-php.js"; path = "ACEView/Dependencies/ace/src/worker-php.js"; sourceTree = "<group>"; };
-		BA0D3BEB31B51592455ACE003AD13972 /* mode-gcode.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-gcode.js"; path = "ACEView/Dependencies/ace/src/mode-gcode.js"; sourceTree = "<group>"; };
-		BA7469186AB51707D0800312F245D824 /* mode-apache_conf.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-apache_conf.js"; path = "ACEView/Dependencies/ace/src/mode-apache_conf.js"; sourceTree = "<group>"; };
-		BD4B3D4B171B04221F2A72E79A18D3B8 /* mode-jade.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-jade.js"; path = "ACEView/Dependencies/ace/src/mode-jade.js"; sourceTree = "<group>"; };
-		BF95D808F4F688BC9D427236E71B7BAC /* ext-linking.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-linking.js"; path = "ACEView/Dependencies/ace/src/ext-linking.js"; sourceTree = "<group>"; };
-		C26712F2C59518C768ECCBE6C6AFFFE6 /* theme-katzenmilch.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-katzenmilch.js"; path = "ACEView/Dependencies/ace/src/theme-katzenmilch.js"; sourceTree = "<group>"; };
-		C6A2E3A2A24721D8977CFAE87CC2AE89 /* ACELogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACELogger.h; path = ACEView/Source/Utilities/Headers/ACELogger.h; sourceTree = "<group>"; };
-		C79D25E1B64D168DB8666D399ED9F3D0 /* ace.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ace.js; path = ACEView/Dependencies/ace/src/ace.js; sourceTree = "<group>"; };
-		C8556BA36C7EC5977F264E4682E8F7F4 /* theme-crimson_editor.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-crimson_editor.js"; path = "ACEView/Dependencies/ace/src/theme-crimson_editor.js"; sourceTree = "<group>"; };
-		CABA4457AD36BE22C60D018E434FDE86 /* ACEStringFromBool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEStringFromBool.h; path = ACEView/Source/Utilities/Headers/ACEStringFromBool.h; sourceTree = "<group>"; };
-		CE066D7AF5E8E0F9C7B3AE4C8C835CDA /* mode-markdown.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-markdown.js"; path = "ACEView/Dependencies/ace/src/mode-markdown.js"; sourceTree = "<group>"; };
-		CE86DAD117047284558DA6A3B6C3580E /* ext-language_tools.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-language_tools.js"; path = "ACEView/Dependencies/ace/src/ext-language_tools.js"; sourceTree = "<group>"; };
-		CEFECE23573FFBE7EFB3A47DCA74DA45 /* mode-php.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-php.js"; path = "ACEView/Dependencies/ace/src/mode-php.js"; sourceTree = "<group>"; };
-		D03B88570086D538A9BF2CDD64CFE5C1 /* mode-clojure.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-clojure.js"; path = "ACEView/Dependencies/ace/src/mode-clojure.js"; sourceTree = "<group>"; };
-		D0774663B0AEF6988F0B7D931A59AC7C /* mode-svg.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-svg.js"; path = "ACEView/Dependencies/ace/src/mode-svg.js"; sourceTree = "<group>"; };
-		D0C3CE0139F8EFF350C8A65A46192BD1 /* theme-tomorrow_night_eighties.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-tomorrow_night_eighties.js"; path = "ACEView/Dependencies/ace/src/theme-tomorrow_night_eighties.js"; sourceTree = "<group>"; };
-		D0C6C298003C8C6EC5900BDD094F11B5 /* mode-dockerfile.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-dockerfile.js"; path = "ACEView/Dependencies/ace/src/mode-dockerfile.js"; sourceTree = "<group>"; };
-		D2D7B1D165FC8B7112D4FEB3CEBCCE46 /* mode-xquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-xquery.js"; path = "ACEView/Dependencies/ace/src/mode-xquery.js"; sourceTree = "<group>"; };
-		D307A0E0BD06CBEA6AA35C4991713FC1 /* mode-golang.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-golang.js"; path = "ACEView/Dependencies/ace/src/mode-golang.js"; sourceTree = "<group>"; };
-		D3B019DB9FA99AC2D82C6F9C56065D48 /* mode-ini.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-ini.js"; path = "ACEView/Dependencies/ace/src/mode-ini.js"; sourceTree = "<group>"; };
-		D489451DEA8851EE6F999F9F22095A1C /* mode-handlebars.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-handlebars.js"; path = "ACEView/Dependencies/ace/src/mode-handlebars.js"; sourceTree = "<group>"; };
-		D5EFF03D029AC3A3450433329A314F8A /* theme-merbivore_soft.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-merbivore_soft.js"; path = "ACEView/Dependencies/ace/src/theme-merbivore_soft.js"; sourceTree = "<group>"; };
-		D63D52AAEDFF027DACA9EA6F1F9CA0C2 /* ext-elastic_tabstops_lite.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-elastic_tabstops_lite.js"; path = "ACEView/Dependencies/ace/src/ext-elastic_tabstops_lite.js"; sourceTree = "<group>"; };
-		D7027461C45BA223C1556C05FA622875 /* mode-yaml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-yaml.js"; path = "ACEView/Dependencies/ace/src/mode-yaml.js"; sourceTree = "<group>"; };
-		D801693B1AEA946C84D7C9F2F07F4A76 /* mode-jsp.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-jsp.js"; path = "ACEView/Dependencies/ace/src/mode-jsp.js"; sourceTree = "<group>"; };
-		D83D8EF83C2E482D76B57D3B53F9D0C6 /* theme-dreamweaver.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-dreamweaver.js"; path = "ACEView/Dependencies/ace/src/theme-dreamweaver.js"; sourceTree = "<group>"; };
-		D9560D17A366D85D6DFD391F17157876 /* mode-scala.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-scala.js"; path = "ACEView/Dependencies/ace/src/mode-scala.js"; sourceTree = "<group>"; };
-		D97F9C5562816A7B98626A37CA6547BF /* theme-xcode.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-xcode.js"; path = "ACEView/Dependencies/ace/src/theme-xcode.js"; sourceTree = "<group>"; };
-		D9855416E34DF0844E45E6D19440E9B5 /* mode-mysql.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-mysql.js"; path = "ACEView/Dependencies/ace/src/mode-mysql.js"; sourceTree = "<group>"; };
-		DA4F6D9814C56914CE42C9967794DF0A /* mode-verilog.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-verilog.js"; path = "ACEView/Dependencies/ace/src/mode-verilog.js"; sourceTree = "<group>"; };
-		DC10674248C28DB074B15C56EA77936A /* NSString+EscapeForJavaScript.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+EscapeForJavaScript.m"; path = "ACEView/Source/Categories/NSString+EscapeForJavaScript.m"; sourceTree = "<group>"; };
-		DD795EF92245CBBB6ED1F5C0DB4ACC92 /* mode-scad.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-scad.js"; path = "ACEView/Dependencies/ace/src/mode-scad.js"; sourceTree = "<group>"; };
-		DEF95A35727A47614B4A14E3FF3214E4 /* mode-velocity.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-velocity.js"; path = "ACEView/Dependencies/ace/src/mode-velocity.js"; sourceTree = "<group>"; };
+		A08AF8212C69F11E36E4A65C9027B748 /* libPods-iMDoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-iMDoes.a"; path = "libPods-iMDoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF72448D8BD5F259D807B90EB6CDEF38 /* Pods-iMDoes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMDoes-frameworks.sh"; sourceTree = "<group>"; };
-		E03776E571D856A31C2422936D10CAC3 /* ext-whitespace.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-whitespace.js"; path = "ACEView/Dependencies/ace/src/ext-whitespace.js"; sourceTree = "<group>"; };
-		E09B00C228D890C7338E2EE8CC5A05CC /* theme-cobalt.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-cobalt.js"; path = "ACEView/Dependencies/ace/src/theme-cobalt.js"; sourceTree = "<group>"; };
-		E0D42CEB42814B4AF21AB4F1FD47DD79 /* theme-pastel_on_dark.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-pastel_on_dark.js"; path = "ACEView/Dependencies/ace/src/theme-pastel_on_dark.js"; sourceTree = "<group>"; };
-		E11DD26FB60663B9E50B252EE6280794 /* mode-perl.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-perl.js"; path = "ACEView/Dependencies/ace/src/mode-perl.js"; sourceTree = "<group>"; };
-		E2004DA62EBAE9D56EBB858AC46FBBC8 /* mode-haml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-haml.js"; path = "ACEView/Dependencies/ace/src/mode-haml.js"; sourceTree = "<group>"; };
-		E322E05C80A51C2238A51D266BE51103 /* mode-toml.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-toml.js"; path = "ACEView/Dependencies/ace/src/mode-toml.js"; sourceTree = "<group>"; };
-		E7C20020643C0AFE1E10D8E456A4136B /* ext-error_marker.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-error_marker.js"; path = "ACEView/Dependencies/ace/src/ext-error_marker.js"; sourceTree = "<group>"; };
-		E82A91DF0EFB4EF3E7670805BC4AEFCC /* mode-asciidoc.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-asciidoc.js"; path = "ACEView/Dependencies/ace/src/mode-asciidoc.js"; sourceTree = "<group>"; };
-		E87C24DF2A6DE099C98D4CA156670572 /* mode-django.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-django.js"; path = "ACEView/Dependencies/ace/src/mode-django.js"; sourceTree = "<group>"; };
-		E88B8A1E472A0806A70C3855BDA9CC3E /* mode-objectivec.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-objectivec.js"; path = "ACEView/Dependencies/ace/src/mode-objectivec.js"; sourceTree = "<group>"; };
-		E9D2C194053DFAAD6BAB5C1B28EF3BB6 /* ext-textarea.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-textarea.js"; path = "ACEView/Dependencies/ace/src/ext-textarea.js"; sourceTree = "<group>"; };
-		EA10C150D569FA50A48E8F09DEB7C312 /* libPods-iMDoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-iMDoes.a"; path = "libPods-iMDoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA22D3A15B42D6C4F3ADFD0661D4D157 /* mode-sjs.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-sjs.js"; path = "ACEView/Dependencies/ace/src/mode-sjs.js"; sourceTree = "<group>"; };
-		ECFB2BC126379ACFA0BBA52685775AA3 /* mode-cirru.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-cirru.js"; path = "ACEView/Dependencies/ace/src/mode-cirru.js"; sourceTree = "<group>"; };
-		ED364A4265B09D4D4E8D2C48D51709A2 /* theme-tomorrow_night_blue.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-tomorrow_night_blue.js"; path = "ACEView/Dependencies/ace/src/theme-tomorrow_night_blue.js"; sourceTree = "<group>"; };
-		EDD116D3EAB775F7A9E3D0ED72E079F2 /* ext-emmet.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-emmet.js"; path = "ACEView/Dependencies/ace/src/ext-emmet.js"; sourceTree = "<group>"; };
-		EDD15D16C82F34F2EC04B2793EEDCA0F /* NSInvocation+MainThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+MainThread.h"; path = "ACEView/Source/Categories/Headers/NSInvocation+MainThread.h"; sourceTree = "<group>"; };
-		EE28C5B728DA344A1E6A6D5D4CF1C50D /* mode-powershell.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-powershell.js"; path = "ACEView/Dependencies/ace/src/mode-powershell.js"; sourceTree = "<group>"; };
-		EE32C1729EC2BFF73AF477F19891E6EB /* mode-mushcode.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-mushcode.js"; path = "ACEView/Dependencies/ace/src/mode-mushcode.js"; sourceTree = "<group>"; };
-		EFFB0E100CF6806CB76B61A34E3CC69E /* mode-elm.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-elm.js"; path = "ACEView/Dependencies/ace/src/mode-elm.js"; sourceTree = "<group>"; };
-		F3ED311889168021BAF71A0EC660FAD0 /* ACEThemeNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEThemeNames.h; path = ACEView/Source/Utilities/Headers/ACEThemeNames.h; sourceTree = "<group>"; };
-		F6B9330CCDE46C7C2DBD4E2FE5BF8110 /* mode-html.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-html.js"; path = "ACEView/Dependencies/ace/src/mode-html.js"; sourceTree = "<group>"; };
-		F7C9333465C05B8CF04B0841D6111FE5 /* mode-dart.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "mode-dart.js"; path = "ACEView/Dependencies/ace/src/mode-dart.js"; sourceTree = "<group>"; };
-		F888D45869C99A235F27A91EF55EBF67 /* NSString+EscapeForJavaScript.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+EscapeForJavaScript.h"; path = "ACEView/Source/Categories/Headers/NSString+EscapeForJavaScript.h"; sourceTree = "<group>"; };
-		FB5817772E7A019C45DBE3C28F5C47B0 /* theme-tomorrow.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-tomorrow.js"; path = "ACEView/Dependencies/ace/src/theme-tomorrow.js"; sourceTree = "<group>"; };
-		FC81B92C8DB05FB28ADADBB229BF1344 /* ext-searchbox.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "ext-searchbox.js"; path = "ACEView/Dependencies/ace/src/ext-searchbox.js"; sourceTree = "<group>"; };
-		FC84E6215D7D0DA721D435D61CF1C476 /* theme-textmate.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "theme-textmate.js"; path = "ACEView/Dependencies/ace/src/theme-textmate.js"; sourceTree = "<group>"; };
-		FE2AF6DAD7EFBED1B84743B2FBA9CC0F /* ACEThemeNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEThemeNames.m; path = ACEView/Source/Utilities/ACEThemeNames.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		174E0E5293ADD807351FDE54DD4297E9 /* Frameworks */ = {
+		5C77651FC7562C25419B16D5EC5A1DF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4EB52F6DB1EB1E3165BA2BBC3AA946C /* Cocoa.framework in Frameworks */,
-				C3645A83A808BDBF8766C4809E149C0C /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0E9239CFAB0DDB44725E934D9684667 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76C30A281A382910EF5C8D2C70607C75 /* Cocoa.framework in Frameworks */,
+				12EE10D5A7D291636EAE37A1A06F8E36 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3ED8D2F17E20D3741AD383AAE7EE106B /* Products */ = {
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				7B1A3B9065FF77072AF55186386D3FF8 /* libACEView.a */,
-				EA10C150D569FA50A48E8F09DEB7C312 /* libPods-iMDoes.a */,
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
 			);
-			name = Products;
+			name = "OS X";
 			sourceTree = "<group>";
 		};
-		469D63DABC4BBE6913A787864456432D /* ACEView */ = {
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98AA4421C234E8205334709E470E602D /* ACEKeyboardHandlerNames.h */,
-				A9B6AA60A6A296B815A0913E306C4D48 /* ACEKeyboardHandlerNames.m */,
-				A84443143D35E5F71DB1A1D04ADD1529 /* ACEKeyboardHandlers.h */,
-				C6A2E3A2A24721D8977CFAE87CC2AE89 /* ACELogger.h */,
-				1CC01FF640CC4D356F0C6B952D4210E9 /* ACELogger.m */,
-				7E1B08BB663E92B353F2676E4177AEC4 /* ACEModeNames.h */,
-				3395AB27F47D3E8BAE30A634EC297052 /* ACEModeNames.m */,
-				897421E77115D0E5EE55C74BA3611E91 /* ACEModes.h */,
-				2E3E964D440F7D3BD58D1BFED1829417 /* ACERange.h */,
-				CABA4457AD36BE22C60D018E434FDE86 /* ACEStringFromBool.h */,
-				F3ED311889168021BAF71A0EC660FAD0 /* ACEThemeNames.h */,
-				FE2AF6DAD7EFBED1B84743B2FBA9CC0F /* ACEThemeNames.m */,
-				4F395C442031F201839D55E60E2CB3DF /* ACEThemes.h */,
-				743D4A7BBA98FB531F9E2786E17A07AC /* ACEView.h */,
-				4D5893B3589CA702DAB9DEE8628E7C55 /* ACEView.m */,
-				EDD15D16C82F34F2EC04B2793EEDCA0F /* NSInvocation+MainThread.h */,
-				6D80AA7AC16CAF0FB01BD727C5C9DE7B /* NSInvocation+MainThread.m */,
-				F888D45869C99A235F27A91EF55EBF67 /* NSString+EscapeForJavaScript.h */,
-				DC10674248C28DB074B15C56EA77936A /* NSString+EscapeForJavaScript.m */,
-				AC950E33BD0E46B7494D8F45342C3D78 /* Resources */,
-				B022C760BF927C4250F900176DCF1090 /* Support Files */,
+				04C068A18C5413F804A2959126093416 /* OS X */,
 			);
-			name = ACEView;
-			path = ACEView;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
-				815D64ADD05BBF3C643F2BEBC68F803A /* Pods */,
-				3ED8D2F17E20D3741AD383AAE7EE106B /* Products */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				A9E5D3BEB7D0ADCE9A98F19EF894041D /* Products */,
 				B5C64E67EF0686D43CEE4C1EE0233281 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		815D64ADD05BBF3C643F2BEBC68F803A /* Pods */ = {
+		A9E5D3BEB7D0ADCE9A98F19EF894041D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				469D63DABC4BBE6913A787864456432D /* ACEView */,
+				A08AF8212C69F11E36E4A65C9027B748 /* libPods-iMDoes.a */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AC950E33BD0E46B7494D8F45342C3D78 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C79D25E1B64D168DB8666D399ED9F3D0 /* ace.js */,
-				91C72D1C5D98C7C71D485A488904EBE7 /* ext-beautify.js */,
-				31D1CFAD2E5D12A2F1C879C04BADED9D /* ext-chromevox.js */,
-				D63D52AAEDFF027DACA9EA6F1F9CA0C2 /* ext-elastic_tabstops_lite.js */,
-				EDD116D3EAB775F7A9E3D0ED72E079F2 /* ext-emmet.js */,
-				E7C20020643C0AFE1E10D8E456A4136B /* ext-error_marker.js */,
-				A977AA034BC213A2FD81D5BD506E2147 /* ext-keybinding_menu.js */,
-				CE86DAD117047284558DA6A3B6C3580E /* ext-language_tools.js */,
-				BF95D808F4F688BC9D427236E71B7BAC /* ext-linking.js */,
-				42A4C1D474E7690054ADAFDD2E04851B /* ext-modelist.js */,
-				4C658CABD6FE4F9DE7D0E13431853FAC /* ext-old_ie.js */,
-				FC81B92C8DB05FB28ADADBB229BF1344 /* ext-searchbox.js */,
-				75A1708D25DFC1D305A77BBA51AD1F48 /* ext-settings_menu.js */,
-				6B8E34E8C4E2642074D83EB9E6576087 /* ext-spellcheck.js */,
-				75B983B468963675C2D3BA759077FF18 /* ext-split.js */,
-				2B4083B83BB3243DE0CC894AD1352CFB /* ext-static_highlight.js */,
-				48F799BB83ABBF5BBA6FF57FBFD69401 /* ext-statusbar.js */,
-				E9D2C194053DFAAD6BAB5C1B28EF3BB6 /* ext-textarea.js */,
-				B4ADB59053854DE5B57D580AC471F4FA /* ext-themelist.js */,
-				E03776E571D856A31C2422936D10CAC3 /* ext-whitespace.js */,
-				6056A0A690827CEB8543300E1A8E6995 /* index.html */,
-				26BB0B302998F5356844C4A22BC05727 /* keybinding-emacs.js */,
-				B1E492ECD77D92185D9A412A7DD697CE /* keybinding-vim.js */,
-				8FE19440C0BEF39F4E3E8324FE4C8A2C /* mode-abap.js */,
-				5D8F24261F8B42AA2CF8800386D5F7FD /* mode-actionscript.js */,
-				7A5417BCAD419D77FD5217195DE4951A /* mode-ada.js */,
-				BA7469186AB51707D0800312F245D824 /* mode-apache_conf.js */,
-				87A05B2E68ACCE7F0EC34E3403201CA9 /* mode-applescript.js */,
-				E82A91DF0EFB4EF3E7670805BC4AEFCC /* mode-asciidoc.js */,
-				87DE59E839A658AF83E3415DADD33C41 /* mode-assembly_x86.js */,
-				9E30B7BFEF444618E78F81263EBC9559 /* mode-autohotkey.js */,
-				B25D2B7AB6AE5C17D9FFEA6C46C207B1 /* mode-batchfile.js */,
-				A7E72634CDC805B3E7985F9A5EB7C9A3 /* mode-c9search.js */,
-				743BBAFC414976947735635F25437537 /* mode-c_cpp.js */,
-				ECFB2BC126379ACFA0BBA52685775AA3 /* mode-cirru.js */,
-				D03B88570086D538A9BF2CDD64CFE5C1 /* mode-clojure.js */,
-				340C759AF9D10D7B5F9F6A59852410B9 /* mode-cobol.js */,
-				2649E08702F65203E20C9CFB2E490934 /* mode-coffee.js */,
-				89DE406AD247A1A4C18F9E721D4C165B /* mode-coldfusion.js */,
-				ACEF62B6E420C16EFA285E79B4D9D41D /* mode-csharp.js */,
-				B8305CFE89135966011F52534C21BD0B /* mode-css.js */,
-				394DD866596EEE59D2FF2B2049CF2B9E /* mode-curly.js */,
-				215ED79BB1D90CA1342C70143A6FD88C /* mode-d.js */,
-				F7C9333465C05B8CF04B0841D6111FE5 /* mode-dart.js */,
-				21C35040FB2191A504FCE25C956062D8 /* mode-diff.js */,
-				E87C24DF2A6DE099C98D4CA156670572 /* mode-django.js */,
-				D0C6C298003C8C6EC5900BDD094F11B5 /* mode-dockerfile.js */,
-				7235D71005CAE7B5D39127C8E9F1AA9C /* mode-dot.js */,
-				7F1D565F24BD8E8F4621CA58AB15828D /* mode-eiffel.js */,
-				B352745C836DEB33CD73611A9443A01F /* mode-ejs.js */,
-				7F8E13A0804ABA7298DBEA9F2C4F4E7F /* mode-elixir.js */,
-				EFFB0E100CF6806CB76B61A34E3CC69E /* mode-elm.js */,
-				840790F751CE42ECA454F7C213396B15 /* mode-erlang.js */,
-				73E7A559865B1E9BA31F74EF7A9953BF /* mode-forth.js */,
-				28ADF4F223E15495B9093E0FC0A095D2 /* mode-ftl.js */,
-				BA0D3BEB31B51592455ACE003AD13972 /* mode-gcode.js */,
-				6E21C50F341C9EC5C4790F76EB7A0696 /* mode-gherkin.js */,
-				59EE599B25F02BE3FBE22A4D37D73E52 /* mode-gitignore.js */,
-				17DE719A0DEE0FE4F2F46CDA83997D6A /* mode-glsl.js */,
-				D307A0E0BD06CBEA6AA35C4991713FC1 /* mode-golang.js */,
-				1CFCFB68604D5E90F0130903301D50FD /* mode-groovy.js */,
-				E2004DA62EBAE9D56EBB858AC46FBBC8 /* mode-haml.js */,
-				D489451DEA8851EE6F999F9F22095A1C /* mode-handlebars.js */,
-				201AD555663065418EC53E19F3EB0617 /* mode-haskell.js */,
-				8A93CFA84EED7EE410BE096661249555 /* mode-haxe.js */,
-				F6B9330CCDE46C7C2DBD4E2FE5BF8110 /* mode-html.js */,
-				31766A65729AD120CD91FAD3E566C173 /* mode-html_ruby.js */,
-				D3B019DB9FA99AC2D82C6F9C56065D48 /* mode-ini.js */,
-				905F2660164C034471D4181E85079DB2 /* mode-io.js */,
-				2A6D9D452842F6028078CB6F92ECE203 /* mode-jack.js */,
-				BD4B3D4B171B04221F2A72E79A18D3B8 /* mode-jade.js */,
-				9F33D301D5B168370A4A7F34A01D2532 /* mode-java.js */,
-				0280BE450D30D49E19A68959E5171936 /* mode-javascript.js */,
-				07DE35FBFA89825A7961FAFBC946D8F7 /* mode-json.js */,
-				38E011AD8AA4ADA8D1483DFB7DA72267 /* mode-jsoniq.js */,
-				D801693B1AEA946C84D7C9F2F07F4A76 /* mode-jsp.js */,
-				1BE324011807EE8FBE86EC651C797908 /* mode-jsx.js */,
-				142566445928EF347497F39F0C2317A4 /* mode-julia.js */,
-				76C2B081BCB06C92DC6D112F78D0E038 /* mode-latex.js */,
-				54EF29FB55F31F501F8F12A118EE0358 /* mode-less.js */,
-				6ED19C758119A86E8D12F449818AEF81 /* mode-liquid.js */,
-				27F6AEA7AD774689E83B35162B9B7071 /* mode-lisp.js */,
-				21D9B055ADEF787598283CC0F97FC4A7 /* mode-livescript.js */,
-				6922837458A02963EFDFA544F86971C3 /* mode-logiql.js */,
-				681095CDD76F18EDB9DA0FBEF23DC00E /* mode-lsl.js */,
-				0F5E382DCA749DFF691465D5F1668EC2 /* mode-lua.js */,
-				886E3416BD97701C259FFF46322466F6 /* mode-luapage.js */,
-				252A3CCCC41DF2FA7D630253508D781B /* mode-lucene.js */,
-				52B91FBFA18B20CE7C7999F9BAE2F678 /* mode-makefile.js */,
-				CE066D7AF5E8E0F9C7B3AE4C8C835CDA /* mode-markdown.js */,
-				0A0D55CBA9FD27D8DE161EEB03929383 /* mode-mask.js */,
-				7FDB9B9641FF9F0C032200822A0A687E /* mode-matlab.js */,
-				332116EC05E0631D653214C59D768D00 /* mode-mel.js */,
-				EE32C1729EC2BFF73AF477F19891E6EB /* mode-mushcode.js */,
-				D9855416E34DF0844E45E6D19440E9B5 /* mode-mysql.js */,
-				B4ABBA3A76CEE84CCBC09FF204336344 /* mode-nix.js */,
-				E88B8A1E472A0806A70C3855BDA9CC3E /* mode-objectivec.js */,
-				B53372E9FC6DF0B87D596ECD2C1D3E22 /* mode-ocaml.js */,
-				7A63D2B94E9C73A0CDA0E55E552D2576 /* mode-pascal.js */,
-				E11DD26FB60663B9E50B252EE6280794 /* mode-perl.js */,
-				ACB82A79A66276EAC21F481AC0741D36 /* mode-pgsql.js */,
-				CEFECE23573FFBE7EFB3A47DCA74DA45 /* mode-php.js */,
-				9F4007ED5B16F34DB4CE302C0BD8F9E6 /* mode-plain_text.js */,
-				EE28C5B728DA344A1E6A6D5D4CF1C50D /* mode-powershell.js */,
-				18839F695F1CDAF05EBD88F36C92C9AA /* mode-praat.js */,
-				711D09D59B2B470E425F7C6583533594 /* mode-prolog.js */,
-				643C1F7C04390ED3C10C6042F82F4E22 /* mode-properties.js */,
-				AA7D823B35A898996DAD930747872890 /* mode-protobuf.js */,
-				AA8676C67DD46CF999FF4F47F0662E72 /* mode-python.js */,
-				71AC12531F7C297C1F4D7C858E33BC1B /* mode-r.js */,
-				3CFD230C650D6AC314733702F8BBF708 /* mode-rdoc.js */,
-				4F1AEA23753A1D1EA68058772EB50602 /* mode-rhtml.js */,
-				4D033B39D4B660D86622FDC84775E603 /* mode-ruby.js */,
-				4FB1CE7008B4E0B0C7EACD0EBFCEAD76 /* mode-rust.js */,
-				37C1F242C588F10F1F282472A45386BA /* mode-sass.js */,
-				DD795EF92245CBBB6ED1F5C0DB4ACC92 /* mode-scad.js */,
-				D9560D17A366D85D6DFD391F17157876 /* mode-scala.js */,
-				71C078C39B42339DD9BD9864D70662C6 /* mode-scheme.js */,
-				B140B80A45AFF39684BAA3624ED2360C /* mode-scss.js */,
-				0BB08E5A5E4C49959100F614EBE50A69 /* mode-sh.js */,
-				EA22D3A15B42D6C4F3ADFD0661D4D157 /* mode-sjs.js */,
-				55ED50AFC6B345FCD565B84A99F2A964 /* mode-smarty.js */,
-				52D6BF228BAECC69F68B60CDC5D3C454 /* mode-snippets.js */,
-				77E859566A956C5AC038AA44C24AAD47 /* mode-soy_template.js */,
-				3026823FBCD9FC1061941E04377EE26C /* mode-space.js */,
-				B0CDF201EDD540B8A825D616249C0727 /* mode-sql.js */,
-				240C336D56D25FD2DD894B799CFBFC45 /* mode-stylus.js */,
-				D0774663B0AEF6988F0B7D931A59AC7C /* mode-svg.js */,
-				6982D7320D2CB14094D75A75B5FEE8FD /* mode-tcl.js */,
-				ADA5B3BE06F2D43980C80C08B427A4A4 /* mode-tex.js */,
-				46896A9B637AC0812079FF245C06624E /* mode-text.js */,
-				0B0559E016E065C31F967BE7C6AA118E /* mode-textile.js */,
-				E322E05C80A51C2238A51D266BE51103 /* mode-toml.js */,
-				B51D78A8DEE3F5B15CA96C957495F596 /* mode-twig.js */,
-				09ABB19AA90DF98122C3E15FF363624B /* mode-typescript.js */,
-				814C605DEE2CC4E47E886F52D85545E5 /* mode-vala.js */,
-				168B0569476F80528F46D46AB4E90C39 /* mode-vbscript.js */,
-				DEF95A35727A47614B4A14E3FF3214E4 /* mode-velocity.js */,
-				DA4F6D9814C56914CE42C9967794DF0A /* mode-verilog.js */,
-				57D83865C8C1B439AB364EE508CC3FC6 /* mode-vhdl.js */,
-				165384F366F4C55932BF267D74E97250 /* mode-xml.js */,
-				D2D7B1D165FC8B7112D4FEB3CEBCCE46 /* mode-xquery.js */,
-				D7027461C45BA223C1556C05FA622875 /* mode-yaml.js */,
-				845E8971ECC92B010B47D2A20A9DD6C5 /* theme-ambiance.js */,
-				AB7CEC56216B0511BD5537E8BAC681B4 /* theme-chaos.js */,
-				360BB268E9809FB10AE3A7C8CE91453E /* theme-chrome.js */,
-				412115C8806EBEC1D8AC30618D3AF846 /* theme-clouds.js */,
-				122318B854D3C3FE651DDF972C80B3F1 /* theme-clouds_midnight.js */,
-				E09B00C228D890C7338E2EE8CC5A05CC /* theme-cobalt.js */,
-				C8556BA36C7EC5977F264E4682E8F7F4 /* theme-crimson_editor.js */,
-				60D644E1D4EFB04D03AE861EDFFF677D /* theme-dawn.js */,
-				D83D8EF83C2E482D76B57D3B53F9D0C6 /* theme-dreamweaver.js */,
-				B7D2067955307666E8369748D36FEFA2 /* theme-eclipse.js */,
-				2235763EFE8E87F7DB5F648710A8DEE5 /* theme-github.js */,
-				96357073D5CEC8BB90C10D6A6ADCA032 /* theme-idle_fingers.js */,
-				C26712F2C59518C768ECCBE6C6AFFFE6 /* theme-katzenmilch.js */,
-				9B3064AC42443200A6E3078A6886AB6E /* theme-kr_theme.js */,
-				40C6E7740D43B03A3B7A72EAB6DED6E7 /* theme-kuroir.js */,
-				42A8A08718F70C5E3E005E93E0BFD1FF /* theme-merbivore.js */,
-				D5EFF03D029AC3A3450433329A314F8A /* theme-merbivore_soft.js */,
-				28495489D5965C5EE8FA1BA117179584 /* theme-mono_industrial.js */,
-				A6B0419320799A0FF41ACE652B7D7352 /* theme-monokai.js */,
-				E0D42CEB42814B4AF21AB4F1FD47DD79 /* theme-pastel_on_dark.js */,
-				37FC4FD7787CB01E600BC5A0BF985B7E /* theme-solarized_dark.js */,
-				7B6E10A387BABEBC77B4B435A12815A5 /* theme-solarized_light.js */,
-				0AC28EC8FE4D92BEAF4A3D7E1DECC9CF /* theme-terminal.js */,
-				FC84E6215D7D0DA721D435D61CF1C476 /* theme-textmate.js */,
-				FB5817772E7A019C45DBE3C28F5C47B0 /* theme-tomorrow.js */,
-				4A6D529CE4DA48ECADE174FADB9EBF93 /* theme-tomorrow_night.js */,
-				ED364A4265B09D4D4E8D2C48D51709A2 /* theme-tomorrow_night_blue.js */,
-				5CDBAA4FB4FDCF8497F6F80C5F693DCA /* theme-tomorrow_night_bright.js */,
-				D0C3CE0139F8EFF350C8A65A46192BD1 /* theme-tomorrow_night_eighties.js */,
-				5364BE36C96C9667CB32A58FBD583C2C /* theme-twilight.js */,
-				3595C345100C347A2034ADFEA44E7A7C /* theme-vibrant_ink.js */,
-				D97F9C5562816A7B98626A37CA6547BF /* theme-xcode.js */,
-				5EA48FC8CE78396B1B6100931286492A /* worker-coffee.js */,
-				B7A260377AEFE2C11573ECF4DB710E50 /* worker-css.js */,
-				459108630E29C0C4DA7B7DBC5714C4CA /* worker-html.js */,
-				951ED6C1864F2B72C03E6D72B640572E /* worker-javascript.js */,
-				5B8843A8CB2949D08771D5985FEB6667 /* worker-json.js */,
-				278EBB3F77CC71A4084D4E8F54A501B6 /* worker-lua.js */,
-				B83BE4C93D14B003AF0D6559BE6031E5 /* worker-php.js */,
-				953CD309D39DA9AF2E4490BDA1B1CD3E /* worker-xquery.js */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		B022C760BF927C4250F900176DCF1090 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				06692E99381C9AB1D6808AFAB9848527 /* ACEView.xcconfig */,
-				758199683061B834695E64EF42735E7D /* ACEView-dummy.m */,
-				83C3C6BFE67AD2DAE66744371439F791 /* ACEView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ACEView";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B5C64E67EF0686D43CEE4C1EE0233281 /* Targets Support Files */ = {
@@ -565,80 +93,23 @@
 			path = "Target Support Files/Pods-iMDoes";
 			sourceTree = "<group>";
 		};
-		D3285EEEE8AEBC6BD30680FEB52D1313 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				20A45ED696BFA2613FB341A31D57D104 /* Cocoa.framework */,
-				ABB58233D26A456DF9C5ADF0C71E9A5D /* WebKit.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D3285EEEE8AEBC6BD30680FEB52D1313 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		DAFE4BD39471DEFC011C8A77A40024BF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				479D4BABC4E40C9A0D0DDE6DE23B5F33 /* ACEKeyboardHandlerNames.h in Headers */,
-				53492A610613E5A6A0BFDEA2405D3614 /* ACEKeyboardHandlers.h in Headers */,
-				9D8C49A7883F5C7697C651C5FAC34230 /* ACELogger.h in Headers */,
-				A0F7F75730F1E635FCAA7B95989DBB54 /* ACEModeNames.h in Headers */,
-				18DFDC348707B79E1AF4CDCF5E87CD7F /* ACEModes.h in Headers */,
-				F5F7B06D9A503DF765FC9C4AD201FB81 /* ACERange.h in Headers */,
-				31ACFD5B91C6E5B8E5B442F87115B39F /* ACEStringFromBool.h in Headers */,
-				011C3644C3723EFE3DE95F1AE2F7A9DB /* ACEThemeNames.h in Headers */,
-				B8E189477A34F7BF560A43E677E99CC7 /* ACEThemes.h in Headers */,
-				C0084B234DDC497D4C3A6ECBC7ABC3A2 /* ACEView.h in Headers */,
-				56125922CE0CC4AD939E71C58E12CB85 /* NSInvocation+MainThread.h in Headers */,
-				49430A2B9FD26D009021DF6265627721 /* NSString+EscapeForJavaScript.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		4D0DBECE41B99441FCBBDAE84A2DBEF0 /* Pods-iMDoes */ = {
+		34698DCF76CD44954F2C858D4176174E /* Pods-iMDoes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2CF1265C968DA0B1224551F1594CE04 /* Build configuration list for PBXNativeTarget "Pods-iMDoes" */;
+			buildConfigurationList = 2E6C5B6F0DC90D41213E532F8EB96533 /* Build configuration list for PBXNativeTarget "Pods-iMDoes" */;
 			buildPhases = (
-				F51FBD9AA6975C952A4A421F2B4BE027 /* Sources */,
-				E0E9239CFAB0DDB44725E934D9684667 /* Frameworks */,
+				9B610639AACFBE6CA86E7998E164F615 /* Sources */,
+				5C77651FC7562C25419B16D5EC5A1DF8 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4197809DABB77B739F1FBD6ABBDAB116 /* PBXTargetDependency */,
 			);
 			name = "Pods-iMDoes";
 			productName = "Pods-iMDoes";
-			productReference = EA10C150D569FA50A48E8F09DEB7C312 /* libPods-iMDoes.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5A28382A4A1601845E27822B7909FBFD /* ACEView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 355165B4917806383C61ED28D651C039 /* Build configuration list for PBXNativeTarget "ACEView" */;
-			buildPhases = (
-				F5B9C65CDD77971106247B5C47205318 /* Sources */,
-				174E0E5293ADD807351FDE54DD4297E9 /* Frameworks */,
-				DAFE4BD39471DEFC011C8A77A40024BF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ACEView;
-			productName = ACEView;
-			productReference = 7B1A3B9065FF77072AF55186386D3FF8 /* libACEView.a */;
+			productReference = A08AF8212C69F11E36E4A65C9027B748 /* libPods-iMDoes.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -658,76 +129,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3ED8D2F17E20D3741AD383AAE7EE106B /* Products */;
+			productRefGroup = A9E5D3BEB7D0ADCE9A98F19EF894041D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A28382A4A1601845E27822B7909FBFD /* ACEView */,
-				4D0DBECE41B99441FCBBDAE84A2DBEF0 /* Pods-iMDoes */,
+				34698DCF76CD44954F2C858D4176174E /* Pods-iMDoes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F51FBD9AA6975C952A4A421F2B4BE027 /* Sources */ = {
+		9B610639AACFBE6CA86E7998E164F615 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF79FD35B4A452CF0D205BBE9F67C03 /* Pods-iMDoes-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5B9C65CDD77971106247B5C47205318 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34BF1BF4B76F5C73DBFADDE33ABD8EBC /* ACEKeyboardHandlerNames.m in Sources */,
-				A9C9715799A0F6926937D17A1B0B4319 /* ACELogger.m in Sources */,
-				F9D34E1D8C47AB6CD9BADCD6745B3BF2 /* ACEModeNames.m in Sources */,
-				D95EBA9FDBB49AD775F7C0754EE5C709 /* ACEThemeNames.m in Sources */,
-				7B9515969717E7183DCFDF27B7449360 /* ACEView-dummy.m in Sources */,
-				7DF8EA2852F9C8FD41A077FB4E5570E6 /* ACEView.m in Sources */,
-				35EA38BC464229734500F90BDC32930F /* NSInvocation+MainThread.m in Sources */,
-				E7D63D10BD7CD060C80ED02FCED5E5C7 /* NSString+EscapeForJavaScript.m in Sources */,
+				19F508FE19AE55D4568507E56E2A312F /* Pods-iMDoes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4197809DABB77B739F1FBD6ABBDAB116 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ACEView;
-			target = 5A28382A4A1601845E27822B7909FBFD /* ACEView */;
-			targetProxy = 525179A1F77853A921DC7DD09AF34276 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		142477D0FE89989727F40F7379B27B96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06692E99381C9AB1D6808AFAB9848527 /* ACEView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ACEView/ACEView-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
 		337AD37B27D7FFADF01DD8D7FE35B27B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -776,31 +198,7 @@
 			};
 			name = Debug;
 		};
-		44C9E099B54F8321EBD4243CE8FE99C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06692E99381C9AB1D6808AFAB9848527 /* ACEView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ACEView/ACEView-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		5A0738F67885C8718C28B2B22417718F /* Release */ = {
+		42B89AE18FC4424D797EA2655BC179D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5581209AE9DECB097C4BF241C4CA4187 /* Pods-iMDoes.release.xcconfig */;
 			buildSettings = {
@@ -825,7 +223,7 @@
 			};
 			name = Release;
 		};
-		6D395AF438E693D92198BA2361B1670B /* Debug */ = {
+		9CC153B4FCFFFDB4193E37D48BEAA1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52BB679B413E536D4852821BE16DACDB /* Pods-iMDoes.debug.xcconfig */;
 			buildSettings = {
@@ -906,20 +304,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		355165B4917806383C61ED28D651C039 /* Build configuration list for PBXNativeTarget "ACEView" */ = {
+		2E6C5B6F0DC90D41213E532F8EB96533 /* Build configuration list for PBXNativeTarget "Pods-iMDoes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				142477D0FE89989727F40F7379B27B96 /* Debug */,
-				44C9E099B54F8321EBD4243CE8FE99C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2CF1265C968DA0B1224551F1594CE04 /* Build configuration list for PBXNativeTarget "Pods-iMDoes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D395AF438E693D92198BA2361B1670B /* Debug */,
-				5A0738F67885C8718C28B2B22417718F /* Release */,
+				9CC153B4FCFFFDB4193E37D48BEAA1C5 /* Debug */,
+				42B89AE18FC4424D797EA2655BC179D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MarkdownEditView.h"
 
 @interface ViewController : NSViewController
 
-
+@property (unsafe_unretained) IBOutlet MarkdownEditView *textView;
 @end
 
