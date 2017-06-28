@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="linkButton" destination="u0L-ZA-C0c" id="q2c-aV-OZI"/>
                 <outlet property="muteButton" destination="lZm-Xc-IDy" id="ihP-uS-eSH"/>
+                <outlet property="pdfButton" destination="LvO-rn-Qo8" id="Rzl-Io-i72"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -132,9 +133,25 @@
                         <action selector="switchMute:" target="-2" id="jmD-WJ-IYZ"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LvO-rn-Qo8">
+                    <rect key="frame" x="650" y="6" width="30" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="nl0-6V-d5p"/>
+                        <constraint firstAttribute="height" constant="30" id="xBX-8d-BtH"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="pdf" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IiX-NY-5gu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="convertPdf:" target="-2" id="p7j-tk-9H6"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstItem="LvO-rn-Qo8" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="FfC-LN-37g"/>
                 <constraint firstItem="lZm-Xc-IDy" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Psm-9A-gob"/>
+                <constraint firstItem="lZm-Xc-IDy" firstAttribute="leading" secondItem="LvO-rn-Qo8" secondAttribute="trailing" constant="16" id="VDk-5f-DV1"/>
                 <constraint firstAttribute="trailing" secondItem="lZm-Xc-IDy" secondAttribute="trailing" constant="11" id="bGj-dE-ZAF"/>
             </constraints>
             <point key="canvasLocation" x="327.5" y="-42.5"/>
@@ -147,6 +164,7 @@
         <image name="list" width="30" height="30"/>
         <image name="middle" width="30" height="30"/>
         <image name="numberList" width="30" height="30"/>
+        <image name="pdf" width="30" height="30"/>
         <image name="picture" width="30" height="30"/>
         <image name="quote" width="30" height="30"/>
         <image name="xieti" width="30" height="30"/>

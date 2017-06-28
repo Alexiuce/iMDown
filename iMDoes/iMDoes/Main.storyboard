@@ -736,10 +736,6 @@
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="NO"/>
                                 </wkWebViewConfiguration>
-                                <connections>
-                                    <outlet property="UIDelegate" destination="XfG-lQ-9wD" id="mey-H4-M0U"/>
-                                    <outlet property="navigationDelegate" destination="XfG-lQ-9wD" id="s0c-mo-Gux"/>
-                                </connections>
                             </wkWebView>
                             <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="tbz-9Z-v9e">
                                 <rect key="frame" x="498" y="15" width="5" height="670"/>

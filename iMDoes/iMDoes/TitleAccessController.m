@@ -25,6 +25,8 @@ static NSString * const MuteKey = @"setMuting";
 
 @property (weak) IBOutlet NSButton *muteButton;
 
+@property (weak) IBOutlet NSButton *pdfButton;
+
 @property (nonatomic, strong)id eventMonitor;
 @property (nonatomic, assign) SystemSoundID soundID;
 
@@ -46,7 +48,7 @@ static NSString * const MuteKey = @"setMuting";
     //设置音效播放完成后的回调C语言函数
     AudioServicesAddSystemSoundCompletion(soundID,NULL,NULL,soundCompleteCallBack,NULL);
     _soundID = soundID;
-    
+    // 添加本地事件监听
     [self addLocalMonitor];
     
     
@@ -71,11 +73,11 @@ static NSString * const MuteKey = @"setMuting";
     }
     [[NSUserDefaults standardUserDefaults] setBool:self.currentState == NSOnState forKey:MuteKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    
-    
-}
 
+}
+- (IBAction)convertPdf:(NSButton *)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ConvertPdfName" object:nil];
+}
 
 - (void)addLocalMonitor{
     NSEvent * (^monitorHandler)(NSEvent *);
@@ -83,13 +85,10 @@ static NSString * const MuteKey = @"setMuting";
         if (theEvent.type == NSEventTypeKeyDown) {
             //开始播放音效
             AudioServicesPlaySystemSound(_soundID);
-            
         }
         return theEvent;
     };
-    
     _eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSEventMaskKeyDown handler:monitorHandler];
-
 }
 
 - (void)dealloc{

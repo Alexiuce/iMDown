@@ -35,4 +35,5 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 
 @property (nonatomic, assign) id <TitleAccessProcotol> delegate;
 
+
 @end

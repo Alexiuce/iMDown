@@ -8,14 +8,14 @@
 
 #import "ViewController.h"
 #import "TitleAccessController.h"
-#import <WebKit/WebKit.h>
+
 #import "MMMarkdown.h"
 
 
 
-@interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
+@interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WebPolicyDelegate>
 
-@property (weak) IBOutlet WKWebView *webView;
+
 
 
 @end
@@ -41,15 +41,22 @@
     });
 }
 
-#pragma mark WEB Delegate <WKUIDelegate,WKNavigationDelegate>
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSString *url = navigationAction.request.URL.absoluteString;
-    WKNavigationActionPolicy policy = [url isEqualToString:@"about:blank"]? WKNavigationActionPolicyAllow:WKNavigationActionPolicyCancel;
-    decisionHandler(policy);
-    if (policy == WKNavigationActionPolicyCancel) {
-        [[NSWorkspace sharedWorkspace] openURL:navigationAction.request.URL];
-    }
-}
+#pragma mark WEB Delegate 
+//- (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id<WebPolicyDecisionListener>)listener{
+//     NSString *url = request.URL.absoluteString;
+//    [url isEqualToString:@"about:blank"]? [listener use] : [listener ignore];
+    
+    
+//}
+
+//- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+//    NSString *url = navigationAction.request.URL.absoluteString;
+//    WKNavigationActionPolicy policy = [url isEqualToString:@"about:blank"]? WKNavigationActionPolicyAllow:WKNavigationActionPolicyCancel;
+//    decisionHandler(policy);
+//    if (policy == WKNavigationActionPolicyCancel) {
+//        [[NSWorkspace sharedWorkspace] openURL:navigationAction.request.URL];
+//    }
+//}
 
 
 #pragma mark - NSTextViewDelegate
@@ -73,7 +80,9 @@
                       </html>\
                       ",css,htmlString];
     
-    [self.webView loadHTMLString:html baseURL:nil];
+    
+    [self.webView.mainFrame loadHTMLString:html baseURL:nil ];
+//    [self.webView loadHTMLString:html baseURL:nil];
     [self.textView updateSyntaxHighlight];
     
 }

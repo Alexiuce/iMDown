@@ -7,10 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HtmlView.h"
 #import "MarkdownEditView.h"
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet HtmlView *webView;
+
 @property (unsafe_unretained) IBOutlet MarkdownEditView *textView;
+
+
+
 @end
 
