@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AE71EF55C1000632E42 /* MarkdownEditView.m */; };
+		D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AEB1EF55F2700632E42 /* FontHelper.m */; };
+		D8454AF21EF5768200632E42 /* SyntaxHighLightStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */; };
+		D8454AF51EF57A9A00632E42 /* SyntaxHighLightConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */; };
+		D8454AF71EF62D1D00632E42 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = D8454AF61EF62D1D00632E42 /* markdown.css */; };
 		D859FBF31EEC3C7C0075388C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FBF21EEC3C7C0075388C /* main.m */; };
 		D859FBF81EEC3C7C0075388C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D859FBF71EEC3C7C0075388C /* Assets.xcassets */; };
 		D859FC031EEC3CA80075388C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D859FC021EEC3CA80075388C /* Main.storyboard */; };
@@ -24,9 +29,23 @@
 		D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC221EEC3D4E0075388C /* MMScanner.m */; };
 		D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC241EEC3D4E0075388C /* MMSpanParser.m */; };
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
+		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
+		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.debug.xcconfig"; sourceTree = "<group>"; };
+		9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMDoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes.release.xcconfig"; sourceTree = "<group>"; };
+		C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMDoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8454AE61EF55C1000632E42 /* MarkdownEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownEditView.h; sourceTree = "<group>"; };
+		D8454AE71EF55C1000632E42 /* MarkdownEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownEditView.m; sourceTree = "<group>"; };
+		D8454AEA1EF55F2700632E42 /* FontHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontHelper.h; sourceTree = "<group>"; };
+		D8454AEB1EF55F2700632E42 /* FontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontHelper.m; sourceTree = "<group>"; };
+		D8454AF01EF5768200632E42 /* SyntaxHighLightStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighLightStorage.h; sourceTree = "<group>"; };
+		D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighLightStorage.m; sourceTree = "<group>"; };
+		D8454AF31EF57A9A00632E42 /* SyntaxHighLightConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighLightConfig.h; sourceTree = "<group>"; };
+		D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighLightConfig.m; sourceTree = "<group>"; };
+		D8454AF61EF62D1D00632E42 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
 		D859FBEB1EEC3C7C0075388C /* iMDoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FBEE1EEC3C7C0075388C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D859FBF21EEC3C7C0075388C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +80,8 @@
 		D859FC231EEC3D4E0075388C /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
 		D859FC241EEC3D4E0075388C /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
 		D859FC2D1EEC3D740075388C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8F27C741EF17DC2008DB3F3 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		D8F27C751EF17DC2008DB3F3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,17 +90,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123A83EC0A64444007536FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C090CB56E8541958444DEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */,
+				9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8454AE91EF55EF800632E42 /* MarkdownEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D8454AE61EF55C1000632E42 /* MarkdownEditView.h */,
+				D8454AE71EF55C1000632E42 /* MarkdownEditView.m */,
+				D8454AF01EF5768200632E42 /* SyntaxHighLightStorage.h */,
+				D8454AF11EF5768200632E42 /* SyntaxHighLightStorage.m */,
+				D8454AF31EF57A9A00632E42 /* SyntaxHighLightConfig.h */,
+				D8454AF41EF57A9A00632E42 /* SyntaxHighLightConfig.m */,
+				D8454AEA1EF55F2700632E42 /* FontHelper.h */,
+				D8454AEB1EF55F2700632E42 /* FontHelper.m */,
+			);
+			name = MarkdownEdit;
+			sourceTree = "<group>";
+		};
 		D859FBE21EEC3C7C0075388C = {
 			isa = PBXGroup;
 			children = (
 				D859FBED1EEC3C7C0075388C /* iMDoes */,
 				D859FBEC1EEC3C7C0075388C /* Products */,
+				8C090CB56E8541958444DEA3 /* Pods */,
+				123A83EC0A64444007536FBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,13 +150,17 @@
 		D859FBED1EEC3C7C0075388C /* iMDoes */ = {
 			isa = PBXGroup;
 			children = (
+				D8454AF61EF62D1D00632E42 /* markdown.css */,
 				D859FC121EEC3D410075388C /* Markdown */,
 				D859FC101EEC3D250075388C /* key-new-01.mp3 */,
 				D859FC0F1EEC3CD50075388C /* iMDoes.entitlements */,
 				D859FBEE1EEC3C7C0075388C /* AppDelegate.h */,
 				D859FC2D1EEC3D740075388C /* AppDelegate.m */,
+				D8F27C741EF17DC2008DB3F3 /* WindowController.h */,
+				D8F27C751EF17DC2008DB3F3 /* WindowController.m */,
 				D859FC041EEC3CCA0075388C /* ViewController.h */,
 				D859FC051EEC3CCA0075388C /* ViewController.m */,
+				D8454AE91EF55EF800632E42 /* MarkdownEdit */,
 				D859FC061EEC3CCA0075388C /* HtmlView.h */,
 				D859FC071EEC3CCA0075388C /* HtmlView.m */,
 				D859FC081EEC3CCA0075388C /* TitleAccessController.h */,
@@ -155,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D859FBFF1EEC3C7C0075388C /* Build configuration list for PBXNativeTarget "iMDoes" */;
 			buildPhases = (
+				57FAC14851A82906D36F5B96 /* [CP] Check Pods Manifest.lock */,
 				D859FBE71EEC3C7C0075388C /* Sources */,
 				D859FBE81EEC3C7C0075388C /* Frameworks */,
 				D859FBE91EEC3C7C0075388C /* Resources */,
+				76AE00D935690A9D6210A7FD /* [CP] Embed Pods Frameworks */,
+				8A5F75CF07A4D65C7C24BBE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,10 +279,59 @@
 				D859FC0E1EEC3CCA0075388C /* TitleAccessController.xib in Resources */,
 				D859FC111EEC3D250075388C /* key-new-01.mp3 in Resources */,
 				D859FC031EEC3CA80075388C /* Main.storyboard in Resources */,
+				D8454AF71EF62D1D00632E42 /* markdown.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57FAC14851A82906D36F5B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76AE00D935690A9D6210A7FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5F75CF07A4D65C7C24BBE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMDoes/Pods-iMDoes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D859FBE71EEC3C7C0075388C /* Sources */ = {
@@ -227,17 +339,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FC2A1EEC3D4E0075388C /* MMParser.m in Sources */,
+				D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */,
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,
 				D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */,
 				D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */,
+				D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */,
 				D859FC281EEC3D4E0075388C /* MMHTMLParser.m in Sources */,
 				D859FC271EEC3D4E0075388C /* MMGenerator.m in Sources */,
 				D859FC261EEC3D4E0075388C /* MMElement.m in Sources */,
 				D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */,
+				D8454AF21EF5768200632E42 /* SyntaxHighLightStorage.m in Sources */,
+				D8454AF51EF57A9A00632E42 /* SyntaxHighLightConfig.m in Sources */,
 				D859FC291EEC3D4E0075388C /* MMMarkdown.m in Sources */,
 				D859FC0C1EEC3CCA0075388C /* HtmlView.m in Sources */,
 				D859FC251EEC3D4E0075388C /* MMDocument.m in Sources */,
 				D859FBF31EEC3C7C0075388C /* main.m in Sources */,
+				D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */,
 				D859FC0D1EEC3CCA0075388C /* TitleAccessController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +453,7 @@
 		};
 		D859FC001EEC3C7C0075388C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE047F30E342C20C45EB091 /* Pods-iMDoes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iMDoes/iMDoes.entitlements;
@@ -355,6 +473,7 @@
 		};
 		D859FC011EEC3C7C0075388C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1423B60164E9E863ECD15B /* Pods-iMDoes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iMDoes/iMDoes.entitlements;

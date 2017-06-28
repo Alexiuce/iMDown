@@ -10,12 +10,21 @@
 #import "TitleAccessController.h"
 #import <WebKit/WebKit.h>
 #import "MMMarkdown.h"
-#import "AppDelegate.h"
+#import "MarkdownEditView.h"
+
+
+
+
+
+
+
 
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WKUIDelegate,WKNavigationDelegate>
 
 @property (weak) IBOutlet WKWebView *webView;
-@property (unsafe_unretained) IBOutlet NSTextView *textView;
+@property (unsafe_unretained) IBOutlet MarkdownEditView *textView;
+
+
 
 @end
 
@@ -38,8 +47,6 @@
         TitleAccessController *tc = [[TitleAccessController alloc]init];
         tc.delegate = self;
         [self.view.window addTitlebarAccessoryViewController:tc];
-        AppDelegate *appDelegate = [NSApp delegate];
-        appDelegate.window = self.view.window;
     });
 }
 
@@ -76,6 +83,7 @@
                       ",css,htmlString];
     
     [self.webView loadHTMLString:html baseURL:nil];
+    [self.textView updateSyntaxHighlight];
     
 }
 
@@ -133,5 +141,7 @@
     //移动光标
     self.textView.selectedRange = selectedRange;
 }
+
+
 
 @end
