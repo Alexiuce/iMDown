@@ -79,6 +79,11 @@ static NSString * const MuteKey = @"setMuting";
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ConvertPdfName" object:nil];
 }
 
+- (IBAction)convertHTML:(NSButton *)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ConvertHTMLName" object:nil];
+}
+
+
 - (void)addLocalMonitor{
     NSEvent * (^monitorHandler)(NSEvent *);
     monitorHandler = ^NSEvent * (NSEvent * theEvent) {

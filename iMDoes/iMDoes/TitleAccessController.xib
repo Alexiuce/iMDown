@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -147,17 +147,34 @@
                         <action selector="convertPdf:" target="-2" id="p7j-tk-9H6"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kkb-Cz-MhH">
+                    <rect key="frame" x="593" y="6" width="49" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="9qK-iW-p7I"/>
+                        <constraint firstAttribute="height" constant="33" id="tf9-SA-2B2"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="HTML" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="eh6-ZC-aaE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="convertHTML:" target="-2" id="aMa-Qt-ju4"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="LvO-rn-Qo8" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="FfC-LN-37g"/>
+                <constraint firstItem="Kkb-Cz-MhH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="6" id="Kul-WY-MRe"/>
                 <constraint firstItem="lZm-Xc-IDy" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Psm-9A-gob"/>
                 <constraint firstItem="lZm-Xc-IDy" firstAttribute="leading" secondItem="LvO-rn-Qo8" secondAttribute="trailing" constant="16" id="VDk-5f-DV1"/>
                 <constraint firstAttribute="trailing" secondItem="lZm-Xc-IDy" secondAttribute="trailing" constant="11" id="bGj-dE-ZAF"/>
+                <constraint firstItem="LvO-rn-Qo8" firstAttribute="leading" secondItem="Kkb-Cz-MhH" secondAttribute="trailing" constant="8" id="xgJ-tb-jgA"/>
             </constraints>
             <point key="canvasLocation" x="327.5" y="-42.5"/>
         </customView>
     </objects>
     <resources>
+        <image name="HTML" width="30" height="30"/>
         <image name="blod" width="30" height="30"/>
         <image name="code" width="30" height="21"/>
         <image name="link" width="30" height="30"/>

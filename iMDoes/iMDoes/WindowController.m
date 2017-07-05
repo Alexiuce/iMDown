@@ -7,6 +7,7 @@
 //
 
 #import "WindowController.h"
+#import "TitleAccessController.h"
 
 @interface WindowController ()
 
@@ -24,6 +25,10 @@
     self.statusItem.image = [NSImage imageNamed:@"markdown"];
     self.statusItem.target = self;
     self.statusItem.action = @selector(reopenWindow);
+    
+    TitleAccessController *tc = [[TitleAccessController alloc]init];
+
+    [self.window addTitlebarAccessoryViewController:tc];
     
 }
 

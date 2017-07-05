@@ -8,7 +8,7 @@
 
 #import "MDocument.h"
 #import "ViewController.h"
-
+#import "TitleAccessController.h"
 
 
 @interface MDocument ()
@@ -22,27 +22,21 @@
 
 @implementation MDocument
 
-/*
-- (NSString *)windowNibName {
-    // Override returning the nib file name of the document
-    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-    return <#nibName#>;
-}
-*/
-
 - (void)makeWindowControllers{
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"mainWindowController"];
     
     [self addWindowController:wc];
     _viewController = (ViewController *)wc.contentViewController;
+    TitleAccessController *tc = wc.window.titlebarAccessoryViewControllers.firstObject;
+    tc.delegate =(ViewController <TitleAccessProcotol> *)wc.contentViewController;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportPdf) name:@"ConvertPdfName" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportHtml) name:@"ConvertHTMLName" object:nil];
     
     if(_origText.length){
         _viewController.textView.string = _origText;
         [_viewController.textView didChangeText];
     }
-    
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
@@ -65,13 +59,10 @@
 + (BOOL)autosavesInPlace {
     return YES;
 }
-// 保存
+// 导出为pdf
 - (void)exportPdf{
     NSSavePanel *panel = [NSSavePanel savePanel];
     panel.allowedFileTypes = @[@"pdf"];
-//    if (self.presumedFileName)
-//        panel.nameFieldStringValue = self.presumedFileName;
-    
     NSWindow *w = nil;
     NSArray *windowControllers = self.windowControllers;
     if (windowControllers.count > 0)
@@ -139,4 +130,24 @@
     NSPrintOperation *op = [view printOperationWithPrintInfo:info];
     return op;
 }
+
+- (void)exportHtml{
+    NSSavePanel *panel = [NSSavePanel savePanel];
+    panel.allowedFileTypes = @[@"html"];
+    NSWindow *w = nil;
+    NSArray *windowControllers = self.windowControllers;
+    if (windowControllers.count > 0){
+        w = [windowControllers[0] window];
+    }
+    
+    [panel beginSheetModalForWindow:w completionHandler:^(NSInteger result) {
+        if (result != NSFileHandlingPanelOKButton){ return;}
+        NSString *jsCode = @"document.documentElement.outerHTML";
+        NSString *html = [_viewController.webView stringByEvaluatingJavaScriptFromString:jsCode];
+        [html writeToURL:panel.URL atomically:NO encoding:NSUTF8StringEncoding error:nil];
+    }];
+  
+    
+}
+
 @end

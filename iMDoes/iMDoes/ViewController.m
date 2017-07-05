@@ -28,18 +28,20 @@
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];
     self.textView.font = [NSFont systemFontOfSize:16];
+  
 }
 
 
 - (void)viewWillAppear{
     [super viewWillAppear];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        TitleAccessController *tc = [[TitleAccessController alloc]init];
-        tc.delegate = self;
-        [self.view.window addTitlebarAccessoryViewController:tc];
-    });
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        TitleAccessController *tc = [[TitleAccessController alloc]init];
+//        tc.delegate = self;
+//        [self.view.window addTitlebarAccessoryViewController:tc];
+//    });
 }
+
 
 #pragma mark WEB Delegate 
 //- (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id<WebPolicyDecisionListener>)listener{
