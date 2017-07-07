@@ -28,8 +28,6 @@
     
     [self addWindowController:wc];
     _viewController = (ViewController *)wc.contentViewController;
-    TitleAccessController *tc = wc.window.titlebarAccessoryViewControllers.firstObject;
-    tc.delegate =(ViewController <TitleAccessProcotol> *)wc.contentViewController;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportPdf) name:@"ConvertPdfName" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportHtml) name:@"ConvertHTMLName" object:nil];
     

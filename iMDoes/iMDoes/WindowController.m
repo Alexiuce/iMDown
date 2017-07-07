@@ -27,9 +27,8 @@
     self.statusItem.action = @selector(reopenWindow);
     
     TitleAccessController *tc = [[TitleAccessController alloc]init];
-
+    tc.delegate = (id <TitleAccessProcotol>)self.window.contentViewController;
     [self.window addTitlebarAccessoryViewController:tc];
-    
 }
 
 

@@ -7,17 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "TitleAccessController.h"
+#import "ViewController.h"
 
 
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong)NSWindow *myWindow;
-
-
-
-
-
 
 @end
 
@@ -27,8 +24,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-   
-    
 }
 
 
