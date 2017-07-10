@@ -28,19 +28,10 @@
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];
     self.textView.font = [NSFont systemFontOfSize:16];
-  
 }
 
 
-- (void)viewWillAppear{
-    [super viewWillAppear];
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        TitleAccessController *tc = [[TitleAccessController alloc]init];
-//        tc.delegate = self;
-//        [self.view.window addTitlebarAccessoryViewController:tc];
-//    });
-}
+
 
 
 #pragma mark WEB Delegate 
@@ -144,6 +135,8 @@
     self.textView.selectedRange = selectedRange;
 }
 
-
+- (void)AppDidFinished:(NSNotification *)noti{
+    NSLog(@"%s",__func__);
+}
 
 @end

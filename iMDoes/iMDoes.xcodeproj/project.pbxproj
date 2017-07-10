@@ -30,6 +30,7 @@
 		D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC241EEC3D4E0075388C /* MMSpanParser.m */; };
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
 		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
+		F215F7F11F136ADB00C9FB9F /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F215F7F01F136ADB00C9FB9F /* Helper.m */; };
 		F2F37BE11F034BB1002693CF /* MDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F37BE01F034BB1002693CF /* MDocument.m */; };
 		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,8 @@
 		D859FC2D1EEC3D740075388C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8F27C741EF17DC2008DB3F3 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		D8F27C751EF17DC2008DB3F3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		F215F7EF1F136ADB00C9FB9F /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		F215F7F01F136ADB00C9FB9F /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F2F37BDF1F034BB1002693CF /* MDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDocument.h; sourceTree = "<group>"; };
 		F2F37BE01F034BB1002693CF /* MDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDocument.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 		D8454AE91EF55EF800632E42 /* MarkdownEdit */ = {
 			isa = PBXGroup;
 			children = (
+				F215F7EF1F136ADB00C9FB9F /* Helper.h */,
+				F215F7F01F136ADB00C9FB9F /* Helper.m */,
 				D8454AE61EF55C1000632E42 /* MarkdownEditView.h */,
 				D8454AE71EF55C1000632E42 /* MarkdownEditView.m */,
 				D8454AF01EF5768200632E42 /* SyntaxHighLightStorage.h */,
@@ -370,6 +375,7 @@
 				D859FBF31EEC3C7C0075388C /* main.m in Sources */,
 				D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */,
 				D859FC0D1EEC3CCA0075388C /* TitleAccessController.m in Sources */,
+				F215F7F11F136ADB00C9FB9F /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

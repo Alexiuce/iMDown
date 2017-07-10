@@ -35,6 +35,7 @@
         _viewController.textView.string = _origText;
         [_viewController.textView didChangeText];
     }
+   
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {

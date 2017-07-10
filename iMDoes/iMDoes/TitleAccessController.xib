@@ -119,20 +119,6 @@
                         <action selector="clickButton:" target="-2" id="Gaw-k3-GMD"/>
                     </connections>
                 </button>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="lZm-Xc-IDy">
-                    <rect key="frame" x="695" y="14" width="65" height="18"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="16" id="5xa-n7-AmJ"/>
-                        <constraint firstAttribute="width" constant="62" id="QmO-w4-u83"/>
-                    </constraints>
-                    <buttonCell key="cell" type="radio" title="mute" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="K3I-K2-59w">
-                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="switchMute:" target="-2" id="jmD-WJ-IYZ"/>
-                    </connections>
-                </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LvO-rn-Qo8">
                     <rect key="frame" x="650" y="6" width="30" height="33"/>
                     <constraints>
@@ -161,13 +147,27 @@
                         <action selector="convertHTML:" target="-2" id="aMa-Qt-ju4"/>
                     </connections>
                 </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="lZm-Xc-IDy">
+                    <rect key="frame" x="697" y="11" width="62" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="5xa-n7-AmJ"/>
+                        <constraint firstAttribute="width" constant="58" id="QmO-w4-u83"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="mute" bezelStyle="regularSquare" imagePosition="left" inset="2" id="K3I-K2-59w">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="switchMute:" target="-2" id="jmD-WJ-IYZ"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="LvO-rn-Qo8" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="FfC-LN-37g"/>
                 <constraint firstItem="Kkb-Cz-MhH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="6" id="Kul-WY-MRe"/>
                 <constraint firstItem="lZm-Xc-IDy" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Psm-9A-gob"/>
-                <constraint firstItem="lZm-Xc-IDy" firstAttribute="leading" secondItem="LvO-rn-Qo8" secondAttribute="trailing" constant="16" id="VDk-5f-DV1"/>
-                <constraint firstAttribute="trailing" secondItem="lZm-Xc-IDy" secondAttribute="trailing" constant="11" id="bGj-dE-ZAF"/>
+                <constraint firstItem="lZm-Xc-IDy" firstAttribute="leading" secondItem="LvO-rn-Qo8" secondAttribute="trailing" constant="19" id="VDk-5f-DV1"/>
+                <constraint firstAttribute="trailing" secondItem="lZm-Xc-IDy" secondAttribute="trailing" constant="12" id="bGj-dE-ZAF"/>
                 <constraint firstItem="LvO-rn-Qo8" firstAttribute="leading" secondItem="Kkb-Cz-MhH" secondAttribute="trailing" constant="8" id="xgJ-tb-jgA"/>
             </constraints>
             <point key="canvasLocation" x="327.5" y="-42.5"/>
