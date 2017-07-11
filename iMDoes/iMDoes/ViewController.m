@@ -15,7 +15,7 @@
 
 @interface ViewController()<NSTextViewDelegate,TitleAccessProcotol,WebPolicyDelegate>
 
-
+@property (weak, nonatomic) TitleAccessController *tac;
 
 
 @end
@@ -30,6 +30,11 @@
     self.textView.font = [NSFont systemFontOfSize:16];
 }
 
+- (void)viewDidAppear{
+    [super viewDidAppear];
+    _tac = self.view.window.titlebarAccessoryViewControllers.firstObject;
+    _tac.delegate = self;
+}
 
 
 
