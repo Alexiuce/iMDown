@@ -10,13 +10,26 @@
 #import "HtmlView.h"
 #import "MarkdownEditView.h"
 
+
+
+
+@protocol XCExportFileProcotol <NSObject>
+@optional
+- (void)xc_exportPdf;
+
+
+@end
+
+
+
+
 @interface ViewController : NSViewController
 
 @property (weak) IBOutlet HtmlView *webView;
 
 @property (unsafe_unretained) IBOutlet MarkdownEditView *textView;
 
-
+@property (weak, nonatomic) id <XCExportFileProcotol> delegate;
 
 @end
 

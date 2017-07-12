@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "strike.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "字体-中划线.png",
       "scale" : "2x"
     },
     {

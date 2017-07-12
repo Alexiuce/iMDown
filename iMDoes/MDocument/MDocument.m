@@ -11,7 +11,7 @@
 #import "TitleAccessController.h"
 
 
-@interface MDocument ()
+@interface MDocument ()<XCExportFileProcotol>
 
 @property (nonatomic, copy) NSString *origText;
 @property (weak, nonatomic) ViewController *viewController;
@@ -28,9 +28,7 @@
     
     [self addWindowController:wc];
     _viewController = (ViewController *)wc.contentViewController;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportPdf) name:@"ConvertPdfName" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exportHtml) name:@"ConvertHTMLName" object:nil];
-    
+    _viewController.delegate = self;
     if(_origText.length){
         _viewController.textView.string = _origText;
         [_viewController.textView didChangeText];
@@ -59,7 +57,7 @@
     return YES;
 }
 // 导出为pdf
-- (void)exportPdf{
+- (void)xc_exportPdf{
     NSSavePanel *panel = [NSSavePanel savePanel];
     panel.allowedFileTypes = @[@"pdf"];
     NSWindow *w = nil;
@@ -138,15 +136,12 @@
     if (windowControllers.count > 0){
         w = [windowControllers[0] window];
     }
-    
     [panel beginSheetModalForWindow:w completionHandler:^(NSInteger result) {
         if (result != NSFileHandlingPanelOKButton){ return;}
         NSString *jsCode = @"document.documentElement.outerHTML";
         NSString *html = [_viewController.webView stringByEvaluatingJavaScriptFromString:jsCode];
         [html writeToURL:panel.URL atomically:NO encoding:NSUTF8StringEncoding error:nil];
     }];
-  
-    
 }
 
 @end

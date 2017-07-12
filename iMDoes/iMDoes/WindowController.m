@@ -7,7 +7,7 @@
 //
 
 #import "WindowController.h"
-#import "TitleAccessController.h"
+
 
 @interface WindowController ()
 
@@ -25,9 +25,11 @@
     self.statusItem.image = [NSImage imageNamed:@"markdown"];
     self.statusItem.target = self;
     self.statusItem.action = @selector(reopenWindow);
+    self.window.titlebarAppearsTransparent = YES;
+//    self.window.styleMask = self.window.styleMask | NSWindowStyleMaskFullSizeContentView;
     
-    TitleAccessController *tc = [[TitleAccessController alloc]init];
-    [self.window addTitlebarAccessoryViewController:tc];
+//    TitleAccessController *tc = [[TitleAccessController alloc]init];
+//    [self.window addTitlebarAccessoryViewController:tc];
     
 }
 

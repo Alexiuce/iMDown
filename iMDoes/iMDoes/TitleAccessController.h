@@ -9,24 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 
-typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
-     LinkStyle = 1,
-     PicutreStyle,
-     BoldStyle,
-     MiddleLineStyle,
-     ItalicStyle,
-     NumberListStyle,
-     ListStyle,
-     CodeStyle,
-     QuoteStyle
-//     UptagStyle,
-//     DowntagStyle
-};
+
 
 
 @protocol TitleAccessProcotol <NSObject>
 
-- (void)titleAccessDidSelectedItemType:(TitleAccessStyle)style;
+//- (void)titleAccessDidSelectedItemType:(TitleAccessStyle)style;
 
 @end
 

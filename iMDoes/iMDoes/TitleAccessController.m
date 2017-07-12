@@ -7,7 +7,7 @@
 //
 
 #import "TitleAccessController.h"
-#import "Helper.h"
+
 
 
 @interface TitleAccessController ()
@@ -50,16 +50,16 @@
 
 - (void)viewDidAppear{
     [super viewDidAppear];
-    BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
-    self.currentState = isMuted ?   NSOnState :  NSOffState ;
-    self.muteButton.state = self.currentState;
-    [self switchMute:self.muteButton];
+//    BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
+//    self.currentState = isMuted ?   NSOnState :  NSOffState ;
+//    self.muteButton.state = self.currentState;
+//    [self switchMute:self.muteButton];
 }
 
 - (IBAction)clickButton:(NSButton *)sender {
-    if ([self.delegate respondsToSelector:@selector(titleAccessDidSelectedItemType:)]) {
-        [self.delegate titleAccessDidSelectedItemType:sender.tag ];
-    }
+//    if ([self.delegate respondsToSelector:@selector(titleAccessDidSelectedItemType:)]) {
+//        [self.delegate titleAccessDidSelectedItemType:sender.tag ];
+//    }
 }
 - (IBAction)switchMute:(NSButton *)sender {
 //    sender.state = !self.currentState;
@@ -71,8 +71,8 @@
 //         NSLog(@"remove %@",_eventMonitor);
 //        [NSEvent removeMonitor:_eventMonitor];
 //    }
-    [[NSUserDefaults standardUserDefaults] setBool:self.currentState == NSOnState forKey:MuteKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+//    [[NSUserDefaults standardUserDefaults] setBool:self.currentState == NSOnState forKey:MuteKey];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
 
 }
 - (IBAction)convertPdf:(NSButton *)sender {
