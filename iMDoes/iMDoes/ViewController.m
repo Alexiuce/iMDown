@@ -27,6 +27,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 @interface ViewController()<NSTextViewDelegate,WebPolicyDelegate>
 @property (weak) IBOutlet NSButton *muteButton;
 
+@property (weak) IBOutlet NSLayoutConstraint *contentTopConstraint;
 
 @end
 
@@ -35,6 +36,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.contentTopConstraint.constant = 0;
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];
     self.textView.font = [NSFont systemFontOfSize:16];

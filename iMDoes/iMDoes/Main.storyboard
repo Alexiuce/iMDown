@@ -106,6 +106,16 @@
                                                 <action selector="revertDocumentToSaved:" target="Ady-hI-5gd" id="iJ3-Pv-kwq"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Export PDF" keyEquivalent="p" id="LfC-Fh-jwb" userLabel="Export PDF">
+                                            <connections>
+                                                <action selector="clickExportPdf:" target="Ady-hI-5gd" id="Asm-rA-q4t"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export HTML" keyEquivalent="h" id="9i6-la-wZd">
+                                            <connections>
+                                                <action selector="clickExportHtml:" target="Ady-hI-5gd" id="Zdg-u0-7qm"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -677,61 +687,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="700"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-sJ-6TT">
-                                <rect key="frame" x="498" y="0.0" width="4" height="656"/>
-                                <view key="contentView" id="jQn-qF-fKa">
-                                    <rect key="frame" x="1" y="1" width="2" height="654"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="4" id="yWA-xW-VKe"/>
-                                </constraints>
-                                <color key="fillColor" red="0.47490218299999998" green="0.90924235200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </box>
-                            <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="yC2-rQ-EkM">
-                                <rect key="frame" x="0.0" y="0.0" width="498" height="656"/>
-                                <clipView key="contentView" id="0KY-xV-w3f">
-                                    <rect key="frame" x="0.0" y="0.0" width="498" height="656"/>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6L9-VB-hO6" userLabel="contentBox">
+                                <rect key="frame" x="0.0" y="0.0" width="1000" height="656"/>
+                                <view key="contentView" id="oeS-c7-dSH">
+                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="656"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" dashSubstitution="YES" smartInsertDelete="YES" id="NIp-ee-TAj" customClass="MarkdownEditView">
+                                        <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-sJ-6TT" userLabel="splitBox">
+                                            <rect key="frame" x="498" y="0.0" width="4" height="656"/>
+                                            <view key="contentView" id="jQn-qF-fKa">
+                                                <rect key="frame" x="1" y="1" width="2" height="654"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="VJQ-AM-axI"/>
+                                            </constraints>
+                                            <color key="fillColor" red="0.47490218299999998" green="0.90924235200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </box>
+                                        <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="yC2-rQ-EkM">
                                             <rect key="frame" x="0.0" y="0.0" width="498" height="656"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" red="0.21719127890000001" green="0.2430056632" blue="0.28813678030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="498" height="656"/>
-                                            <size key="maxSize" width="498" height="10000000"/>
-                                            <color key="insertionPointColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <clipView key="contentView" id="0KY-xV-w3f">
+                                                <rect key="frame" x="0.0" y="0.0" width="498" height="656"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" dashSubstitution="YES" smartInsertDelete="YES" id="NIp-ee-TAj" customClass="MarkdownEditView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="498" height="656"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" red="0.21719127890000001" green="0.2430056632" blue="0.28813678030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="minSize" width="498" height="656"/>
+                                                        <size key="maxSize" width="499" height="10000000"/>
+                                                        <color key="insertionPointColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="B5N-fQ-lbd"/>
+                                                        </connections>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </clipView>
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="vFD-qW-76p">
+                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="u5T-7H-3oF">
+                                                <rect key="frame" x="482" y="0.0" width="16" height="656"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                        </scrollView>
+                                        <wkWebView wantsLayer="YES" allowsLinkPreview="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-Ne-XgG" customClass="HtmlView">
+                                            <rect key="frame" x="502" y="0.0" width="498" height="656"/>
+                                            <wkWebViewConfiguration key="configuration">
+                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="NO"/>
+                                            </wkWebViewConfiguration>
                                             <connections>
-                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="B5N-fQ-lbd"/>
+                                                <outlet property="policyDelegate" destination="XfG-lQ-9wD" id="OnN-6C-oZX"/>
                                             </connections>
-                                        </textView>
+                                        </wkWebView>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="vFD-qW-76p">
-                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="u5T-7H-3oF">
-                                    <rect key="frame" x="482" y="0.0" width="16" height="656"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
-                            <wkWebView wantsLayer="YES" allowsLinkPreview="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-Ne-XgG" customClass="HtmlView">
-                                <rect key="frame" x="503" y="0.0" width="497" height="656"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="NO"/>
-                                </wkWebViewConfiguration>
-                                <connections>
-                                    <outlet property="policyDelegate" destination="XfG-lQ-9wD" id="OnN-6C-oZX"/>
-                                </connections>
-                            </wkWebView>
-                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="tbz-9Z-v9e">
-                                <rect key="frame" x="498" y="15" width="5" height="645"/>
+                                    <constraints>
+                                        <constraint firstItem="6b3-sJ-6TT" firstAttribute="centerX" secondItem="oeS-c7-dSH" secondAttribute="centerX" id="A5T-19-zNh"/>
+                                        <constraint firstAttribute="bottom" secondItem="cdf-Ne-XgG" secondAttribute="bottom" id="AB0-nu-om6"/>
+                                        <constraint firstItem="yC2-rQ-EkM" firstAttribute="top" secondItem="oeS-c7-dSH" secondAttribute="top" id="F6v-xQ-uBs"/>
+                                        <constraint firstItem="yC2-rQ-EkM" firstAttribute="leading" secondItem="oeS-c7-dSH" secondAttribute="leading" id="K7l-ac-Hme"/>
+                                        <constraint firstItem="cdf-Ne-XgG" firstAttribute="leading" secondItem="6b3-sJ-6TT" secondAttribute="trailing" id="R3Z-u1-lVF"/>
+                                        <constraint firstItem="cdf-Ne-XgG" firstAttribute="top" secondItem="oeS-c7-dSH" secondAttribute="top" id="RJX-uT-9J2"/>
+                                        <constraint firstAttribute="bottom" secondItem="6b3-sJ-6TT" secondAttribute="bottom" id="Wkr-dy-n1h"/>
+                                        <constraint firstItem="6b3-sJ-6TT" firstAttribute="top" secondItem="oeS-c7-dSH" secondAttribute="top" id="jpd-gq-PzR"/>
+                                        <constraint firstAttribute="trailing" secondItem="cdf-Ne-XgG" secondAttribute="trailing" id="rC9-Ey-A9Z"/>
+                                        <constraint firstItem="6b3-sJ-6TT" firstAttribute="leading" secondItem="yC2-rQ-EkM" secondAttribute="trailing" id="xD6-dz-zIs"/>
+                                        <constraint firstAttribute="bottom" secondItem="yC2-rQ-EkM" secondAttribute="bottom" id="zC7-Qj-uZs"/>
+                                    </constraints>
+                                </view>
                             </box>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-3U-tar">
+                            <box hidden="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-3U-tar" userLabel="topBox">
                                 <rect key="frame" x="0.0" y="656" width="1000" height="44"/>
                                 <view key="contentView" id="cii-xN-Hxu">
                                     <rect key="frame" x="0.0" y="0.0" width="1000" height="44"/>
@@ -940,26 +969,17 @@
                             </box>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="tbz-9Z-v9e" secondAttribute="bottom" constant="15" id="1FV-nP-vmG"/>
-                            <constraint firstAttribute="trailing" secondItem="cdf-Ne-XgG" secondAttribute="trailing" id="1IY-gV-43X"/>
-                            <constraint firstAttribute="bottom" secondItem="cdf-Ne-XgG" secondAttribute="bottom" id="El4-zK-Iyk"/>
+                            <constraint firstItem="6L9-VB-hO6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="44" id="8LH-mE-bJz"/>
+                            <constraint firstAttribute="bottom" secondItem="6L9-VB-hO6" secondAttribute="bottom" id="A6I-yv-7fS"/>
                             <constraint firstAttribute="trailing" secondItem="7qT-3U-tar" secondAttribute="trailing" id="HRp-k5-jgB"/>
-                            <constraint firstItem="6b3-sJ-6TT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="44" id="Lec-AO-EQN"/>
-                            <constraint firstItem="cdf-Ne-XgG" firstAttribute="leading" secondItem="tbz-9Z-v9e" secondAttribute="trailing" constant="2" id="Lt6-bw-FeG"/>
                             <constraint firstItem="7qT-3U-tar" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="PaM-qp-A0U"/>
-                            <constraint firstItem="tbz-9Z-v9e" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Pjs-Gx-xME"/>
-                            <constraint firstItem="cdf-Ne-XgG" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="44" id="VOC-fR-pOS"/>
-                            <constraint firstAttribute="bottom" secondItem="6b3-sJ-6TT" secondAttribute="bottom" id="Yiu-OM-see"/>
-                            <constraint firstItem="yC2-rQ-EkM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="44" id="c4a-S4-cRD"/>
-                            <constraint firstAttribute="bottom" secondItem="yC2-rQ-EkM" secondAttribute="bottom" id="g8R-Ck-D1H"/>
-                            <constraint firstItem="tbz-9Z-v9e" firstAttribute="leading" secondItem="yC2-rQ-EkM" secondAttribute="trailing" constant="2" id="iv2-Dd-Jdx"/>
-                            <constraint firstItem="6b3-sJ-6TT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="nyA-7k-dQS"/>
+                            <constraint firstAttribute="trailing" secondItem="6L9-VB-hO6" secondAttribute="trailing" id="idU-Uy-ZNJ"/>
                             <constraint firstItem="7qT-3U-tar" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="p3I-y4-Gi3"/>
-                            <constraint firstItem="yC2-rQ-EkM" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="rLe-7Y-j19"/>
-                            <constraint firstItem="tbz-9Z-v9e" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="wMw-dy-Din"/>
+                            <constraint firstItem="6L9-VB-hO6" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="zkh-go-zvz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contentTopConstraint" destination="8LH-mE-bJz" id="fkZ-qP-CFg"/>
                         <outlet property="muteButton" destination="jMh-nq-ySw" id="Rfu-fQ-BIZ"/>
                         <outlet property="textView" destination="NIp-ee-TAj" id="mNT-1x-zMj"/>
                         <outlet property="webView" destination="cdf-Ne-XgG" id="bdr-xs-7XH"/>
