@@ -15,7 +15,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic, strong)NSWindow *myWindow;
-
+//@property (nonatomic, strong)NSStatusItem *statusItem;
 @end
 
 @implementation AppDelegate
@@ -24,7 +24,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-  
+//    self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
+//    self.statusItem.image = [NSImage imageNamed:@"markdown"];
+//    self.statusItem.target = self;
+//    self.statusItem.action = @selector(reopenWindow);
 }
 
 
@@ -32,7 +35,9 @@
     return !(flag | ([self.myWindow makeKeyAndOrderFront:self], 0));
 }
 
-
+//- (void)reopenWindow{
+//    [self.myWindow isVisible] ? nil : [self.myWindow makeKeyAndOrderFront:self];
+//}
 
 #pragma  mark - Getter
 - (NSWindow *)myWindow{

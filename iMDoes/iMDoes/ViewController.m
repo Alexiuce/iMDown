@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MMMarkdown.h"
 #import "Helper.h"
+#import "MYAnimation.h"
 
 typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     LinkStyle = 1,
@@ -24,10 +25,12 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     //     DowntagStyle
 };
 
-@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate>
+@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate,MYAnimationProcotol>
 @property (weak) IBOutlet NSButton *muteButton;
+@property (weak) IBOutlet NSLayoutConstraint *topBoxTop;
+@property (weak) IBOutlet NSBox *toolBar;
 
-@property (weak) IBOutlet NSLayoutConstraint *contentTopConstraint;
+@property (assign, nonatomic) BOOL barDisplayed;
 
 @end
 
@@ -36,7 +39,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contentTopConstraint.constant = 0;
+    _barDisplayed = NO;
     self.textView.automaticQuoteSubstitutionEnabled = NO;
     self.textView.textColor = [NSColor whiteColor];
     self.textView.font = [NSFont systemFontOfSize:16];
@@ -197,6 +200,26 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     if ( [self.delegate respondsToSelector:@selector(xc_exportPdf)]) {
         [self.delegate xc_exportPdf];
     }
+}
+
+- (IBAction)showToolBar:(NSButton *)sender{
+    NSMenuItem *item = (NSMenuItem *) sender;
+    _barDisplayed = !_barDisplayed;
+    item.title = _barDisplayed ? @"Hiden Toolbar" : @"Show Toolbar"  ;
+    
+    
+    MYAnimation *animation = [[MYAnimation alloc]initWithDuration:0.25 animationCurve:NSAnimationEaseInOut];
+    animation.myDelegate = self;
+    animation.animationBlockingMode = NSAnimationNonblocking;
+    [animation startAnimation];
+    
+    
+}
+#pragma mark - MYAnimationProcotol
+- (void)myAnimationProgress:(NSAnimationProgress)progress{
+    CGFloat delat = _barDisplayed ? 1- progress : progress;
+    
+    self.topBoxTop.constant = -44 * delat ;
 }
 
 

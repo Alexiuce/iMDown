@@ -32,6 +32,7 @@
 		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
 		F215F7F11F136ADB00C9FB9F /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F215F7F01F136ADB00C9FB9F /* Helper.m */; };
 		F2F37BE11F034BB1002693CF /* MDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F37BE01F034BB1002693CF /* MDocument.m */; };
+		F2FFCAFB1F18A854001420E4 /* MYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FFCAFA1F18A854001420E4 /* MYAnimation.m */; };
 		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F2F37BDF1F034BB1002693CF /* MDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDocument.h; sourceTree = "<group>"; };
 		F2F37BE01F034BB1002693CF /* MDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDocument.m; sourceTree = "<group>"; };
+		F2FFCAF91F18A854001420E4 /* MYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAnimation.h; sourceTree = "<group>"; };
+		F2FFCAFA1F18A854001420E4 /* MYAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				D8F27C751EF17DC2008DB3F3 /* WindowController.m */,
 				D859FC041EEC3CCA0075388C /* ViewController.h */,
 				D859FC051EEC3CCA0075388C /* ViewController.m */,
+				F2FFCAF91F18A854001420E4 /* MYAnimation.h */,
+				F2FFCAFA1F18A854001420E4 /* MYAnimation.m */,
 				D8454AE91EF55EF800632E42 /* MarkdownEdit */,
 				D859FC061EEC3CCA0075388C /* HtmlView.h */,
 				D859FC071EEC3CCA0075388C /* HtmlView.m */,
@@ -356,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FFCAFB1F18A854001420E4 /* MYAnimation.m in Sources */,
 				D859FC2A1EEC3D4E0075388C /* MMParser.m in Sources */,
 				D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */,
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,

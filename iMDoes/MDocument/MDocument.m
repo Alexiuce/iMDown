@@ -144,4 +144,7 @@
     }];
 }
 
+- (void)dealloc{
+    XCLog(@"%s",__func__)
+}
 @end
