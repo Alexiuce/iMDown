@@ -218,7 +218,6 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 #pragma mark - MYAnimationProcotol
 - (void)myAnimationProgress:(NSAnimationProgress)progress{
     CGFloat delat = _barDisplayed ? 1- progress : progress;
-    
     self.topBoxTop.constant = -44 * delat ;
 }
 
