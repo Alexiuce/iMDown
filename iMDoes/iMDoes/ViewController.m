@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     //     DowntagStyle
 };
 
-@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate,MYAnimationProcotol>
+@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate>
 @property (weak) IBOutlet NSButton *muteButton;
 @property (weak) IBOutlet NSLayoutConstraint *topBoxTop;
 @property (weak) IBOutlet NSBox *toolBar;
