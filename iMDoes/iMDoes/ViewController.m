@@ -10,6 +10,7 @@
 #import "MMMarkdown.h"
 #import "Helper.h"
 #import "MYAnimation.h"
+#import <Quartz/Quartz.h>
 
 typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     LinkStyle = 1,
@@ -31,6 +32,9 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 @property (weak) IBOutlet NSBox *toolBar;
 
 @property (assign, nonatomic) BOOL barDisplayed;
+
+@property (weak) IBOutlet NSLayoutConstraint *topBoxTopConstraint;
+
 
 @end
 
@@ -208,18 +212,26 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     item.title = _barDisplayed ? @"Hiden Toolbar" : @"Show Toolbar"  ;
     
     
-    MYAnimation *animation = [[MYAnimation alloc]initWithDuration:0.25 animationCurve:NSAnimationEaseInOut];
-    animation.myDelegate = self;
-    animation.animationBlockingMode = NSAnimationNonblocking;
-    [animation startAnimation];
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        context.duration =  0.25f;
+        context.allowsImplicitAnimation = YES;
+        context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44;
+    } completionHandler:nil];
+    
+    
+//    MYAnimation *animation = [[MYAnimation alloc]initWithDuration:0.25 animationCurve:NSAnimationEaseInOut];
+//    animation.myDelegate = self;
+//    animation.animationBlockingMode = NSAnimationNonblocking;
+//    [animation startAnimation];
     
     
 }
-#pragma mark - MYAnimationProcotol
-- (void)myAnimationProgress:(NSAnimationProgress)progress{
-    CGFloat delat = _barDisplayed ? 1- progress : progress;
-    self.topBoxTop.constant = -44 * delat ;
-}
+//#pragma mark - MYAnimationProcotol
+//- (void)myAnimationProgress:(NSAnimationProgress)progress{
+//    CGFloat delat = _barDisplayed ? 1- progress : progress;
+//    self.topBoxTop.constant = -44 * delat ;
+//}
 
 
 @end
