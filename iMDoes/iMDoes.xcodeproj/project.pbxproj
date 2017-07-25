@@ -31,6 +31,10 @@
 		D859FC2E1EEC3D740075388C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D859FC2D1EEC3D740075388C /* AppDelegate.m */; };
 		D8F27C761EF17DC2008DB3F3 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F27C751EF17DC2008DB3F3 /* WindowController.m */; };
 		F215F7F11F136ADB00C9FB9F /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F215F7F01F136ADB00C9FB9F /* Helper.m */; };
+		F231A6DF1F270C050079DDE2 /* HGMarkdownHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A6D91F270C050079DDE2 /* HGMarkdownHighlighter.m */; };
+		F231A6E01F270C050079DDE2 /* HGMarkdownHighlightingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A6DB1F270C050079DDE2 /* HGMarkdownHighlightingStyle.m */; };
+		F231A6E11F270C050079DDE2 /* pmh_styleparser.c in Sources */ = {isa = PBXBuildFile; fileRef = F231A6DD1F270C050079DDE2 /* pmh_styleparser.c */; };
+		F231A6E41F2711180079DDE2 /* pmh_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = F231A6E31F2711180079DDE2 /* pmh_parser.c */; };
 		F2F37BE11F034BB1002693CF /* MDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F37BE01F034BB1002693CF /* MDocument.m */; };
 		F2FFCAFB1F18A854001420E4 /* MYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FFCAFA1F18A854001420E4 /* MYAnimation.m */; };
 		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
@@ -87,6 +91,15 @@
 		D8F27C751EF17DC2008DB3F3 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		F215F7EF1F136ADB00C9FB9F /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		F215F7F01F136ADB00C9FB9F /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		F231A6D81F270C050079DDE2 /* HGMarkdownHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGMarkdownHighlighter.h; sourceTree = "<group>"; };
+		F231A6D91F270C050079DDE2 /* HGMarkdownHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMarkdownHighlighter.m; sourceTree = "<group>"; };
+		F231A6DA1F270C050079DDE2 /* HGMarkdownHighlightingStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGMarkdownHighlightingStyle.h; sourceTree = "<group>"; };
+		F231A6DB1F270C050079DDE2 /* HGMarkdownHighlightingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMarkdownHighlightingStyle.m; sourceTree = "<group>"; };
+		F231A6DC1F270C050079DDE2 /* pmh_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_definitions.h; sourceTree = "<group>"; };
+		F231A6DD1F270C050079DDE2 /* pmh_styleparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmh_styleparser.c; sourceTree = "<group>"; };
+		F231A6DE1F270C050079DDE2 /* pmh_styleparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_styleparser.h; sourceTree = "<group>"; };
+		F231A6E21F270EC50079DDE2 /* pmh_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_parser.h; sourceTree = "<group>"; };
+		F231A6E31F2711180079DDE2 /* pmh_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmh_parser.c; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F2F37BDF1F034BB1002693CF /* MDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDocument.h; sourceTree = "<group>"; };
 		F2F37BE01F034BB1002693CF /* MDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDocument.m; sourceTree = "<group>"; };
@@ -143,6 +156,7 @@
 		D859FBE21EEC3C7C0075388C = {
 			isa = PBXGroup;
 			children = (
+				F231A6D71F270C050079DDE2 /* MarkDownHighlight */,
 				F2F37BDE1F034B97002693CF /* MDocument */,
 				D859FBED1EEC3C7C0075388C /* iMDoes */,
 				D859FBEC1EEC3C7C0075388C /* Products */,
@@ -220,6 +234,22 @@
 				D859FC241EEC3D4E0075388C /* MMSpanParser.m */,
 			);
 			path = Markdown;
+			sourceTree = "<group>";
+		};
+		F231A6D71F270C050079DDE2 /* MarkDownHighlight */ = {
+			isa = PBXGroup;
+			children = (
+				F231A6D81F270C050079DDE2 /* HGMarkdownHighlighter.h */,
+				F231A6D91F270C050079DDE2 /* HGMarkdownHighlighter.m */,
+				F231A6DA1F270C050079DDE2 /* HGMarkdownHighlightingStyle.h */,
+				F231A6DB1F270C050079DDE2 /* HGMarkdownHighlightingStyle.m */,
+				F231A6E21F270EC50079DDE2 /* pmh_parser.h */,
+				F231A6E31F2711180079DDE2 /* pmh_parser.c */,
+				F231A6DC1F270C050079DDE2 /* pmh_definitions.h */,
+				F231A6DD1F270C050079DDE2 /* pmh_styleparser.c */,
+				F231A6DE1F270C050079DDE2 /* pmh_styleparser.h */,
+			);
+			path = MarkDownHighlight;
 			sourceTree = "<group>";
 		};
 		F2F37BDE1F034B97002693CF /* MDocument */ = {
@@ -367,6 +397,7 @@
 				D859FC0B1EEC3CCA0075388C /* ViewController.m in Sources */,
 				D859FC2C1EEC3D4E0075388C /* MMSpanParser.m in Sources */,
 				F2F37BE11F034BB1002693CF /* MDocument.m in Sources */,
+				F231A6E01F270C050079DDE2 /* HGMarkdownHighlightingStyle.m in Sources */,
 				D859FC2B1EEC3D4E0075388C /* MMScanner.m in Sources */,
 				D8454AE81EF55C1000632E42 /* MarkdownEditView.m in Sources */,
 				D859FC281EEC3D4E0075388C /* MMHTMLParser.m in Sources */,
@@ -376,12 +407,15 @@
 				D8454AF21EF5768200632E42 /* SyntaxHighLightStorage.m in Sources */,
 				D8454AF51EF57A9A00632E42 /* SyntaxHighLightConfig.m in Sources */,
 				D859FC291EEC3D4E0075388C /* MMMarkdown.m in Sources */,
+				F231A6DF1F270C050079DDE2 /* HGMarkdownHighlighter.m in Sources */,
 				D859FC0C1EEC3CCA0075388C /* HtmlView.m in Sources */,
 				D859FC251EEC3D4E0075388C /* MMDocument.m in Sources */,
 				D859FBF31EEC3C7C0075388C /* main.m in Sources */,
+				F231A6E11F270C050079DDE2 /* pmh_styleparser.c in Sources */,
 				D8454AEC1EF55F2700632E42 /* FontHelper.m in Sources */,
 				D859FC0D1EEC3CCA0075388C /* TitleAccessController.m in Sources */,
 				F215F7F11F136ADB00C9FB9F /* Helper.m in Sources */,
+				F231A6E41F2711180079DDE2 /* pmh_parser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

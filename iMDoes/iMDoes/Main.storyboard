@@ -983,6 +983,7 @@
                         <outlet property="textView" destination="NIp-ee-TAj" id="mNT-1x-zMj"/>
                         <outlet property="toolBar" destination="7qT-3U-tar" id="3ZJ-IM-Fg1"/>
                         <outlet property="topBoxTop" destination="p3I-y4-Gi3" id="LzT-0j-Tij"/>
+                        <outlet property="topBoxTopConstraint" destination="p3I-y4-Gi3" id="XKv-2h-IAJ"/>
                         <outlet property="webView" destination="cdf-Ne-XgG" id="bdr-xs-7XH"/>
                     </connections>
                 </viewController>

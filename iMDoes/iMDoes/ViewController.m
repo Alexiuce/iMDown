@@ -10,6 +10,8 @@
 #import "MMMarkdown.h"
 #import "Helper.h"
 #import "MYAnimation.h"
+#import <Quartz/Quartz.h>
+//#import "HGMarkdownHighlighter.h"
 
 typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     LinkStyle = 1,
@@ -25,12 +27,16 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     //     DowntagStyle
 };
 
-@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate,MYAnimationProcotol>
+@interface ViewController()<NSTextViewDelegate,WebPolicyDelegate>
 @property (weak) IBOutlet NSButton *muteButton;
 @property (weak) IBOutlet NSLayoutConstraint *topBoxTop;
 @property (weak) IBOutlet NSBox *toolBar;
 
 @property (assign, nonatomic) BOOL barDisplayed;
+
+@property (weak) IBOutlet NSLayoutConstraint *topBoxTopConstraint;
+
+//@property (nonatomic, strong) HGMarkdownHighlighter *highlighter;
 
 @end
 
@@ -45,6 +51,11 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     self.textView.font = [NSFont systemFontOfSize:16];
     BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
     self.muteButton.state = isMuted ?   NSOnState :  NSOffState ;
+    
+//    _highlighter = [[HGMarkdownHighlighter alloc]initWithTextView:self.textView waitInterval:0.1];
+//    _highlighter.parseAndHighlightAutomatically = YES;
+//    [_highlighter activate];
+    
 }
 
 
@@ -208,18 +219,26 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     item.title = _barDisplayed ? @"Hiden Toolbar" : @"Show Toolbar"  ;
     
     
-    MYAnimation *animation = [[MYAnimation alloc]initWithDuration:0.25 animationCurve:NSAnimationEaseInOut];
-    animation.myDelegate = self;
-    animation.animationBlockingMode = NSAnimationNonblocking;
-    [animation startAnimation];
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        context.duration =  0.25f;
+        context.allowsImplicitAnimation = YES;
+        context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44;
+    } completionHandler:nil];
+    
+    
+//    MYAnimation *animation = [[MYAnimation alloc]initWithDuration:0.25 animationCurve:NSAnimationEaseInOut];
+//    animation.myDelegate = self;
+//    animation.animationBlockingMode = NSAnimationNonblocking;
+//    [animation startAnimation];
     
     
 }
-#pragma mark - MYAnimationProcotol
-- (void)myAnimationProgress:(NSAnimationProgress)progress{
-    CGFloat delat = _barDisplayed ? 1- progress : progress;
-    self.topBoxTop.constant = -44 * delat ;
-}
+//#pragma mark - MYAnimationProcotol
+//- (void)myAnimationProgress:(NSAnimationProgress)progress{
+//    CGFloat delat = _barDisplayed ? 1- progress : progress;
+//    self.topBoxTop.constant = -44 * delat ;
+//}
 
 
 @end
