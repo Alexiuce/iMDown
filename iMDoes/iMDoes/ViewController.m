@@ -11,6 +11,7 @@
 #import "Helper.h"
 #import "MYAnimation.h"
 #import <Quartz/Quartz.h>
+//#import "HGMarkdownHighlighter.h"
 
 typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     LinkStyle = 1,
@@ -35,6 +36,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 
 @property (weak) IBOutlet NSLayoutConstraint *topBoxTopConstraint;
 
+//@property (nonatomic, strong) HGMarkdownHighlighter *highlighter;
 
 @end
 
@@ -49,6 +51,11 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     self.textView.font = [NSFont systemFontOfSize:16];
     BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
     self.muteButton.state = isMuted ?   NSOnState :  NSOffState ;
+    
+//    _highlighter = [[HGMarkdownHighlighter alloc]initWithTextView:self.textView waitInterval:0.1];
+//    _highlighter.parseAndHighlightAutomatically = YES;
+//    [_highlighter activate];
+    
 }
 
 

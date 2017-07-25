@@ -12,9 +12,13 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "Helper.h"
 
+
+
 void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 
 @interface MarkdownEditView ()
+
+
 
 @property (nonatomic, strong) SyntaxHighLightStorage *syntaxStorage;
 @property (nonatomic, assign) SystemSoundID soundID;
@@ -32,6 +36,9 @@ void soundCompleteCallBack(SystemSoundID soundID, void    *clientData) {}
 
 - (void)awakeFromNib{
     [super awakeFromNib];
+    
+
+    
     //获取音效文件路径
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"key-new-01.mp3" ofType:nil];
     //创建音效文件URL
