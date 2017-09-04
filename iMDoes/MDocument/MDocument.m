@@ -23,6 +23,9 @@
 @implementation MDocument
 
 - (void)makeWindowControllers{
+    
+    NSLog(@"doc make win");
+    
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"mainWindowController"];
     
@@ -33,7 +36,6 @@
         _viewController.textView.string = _origText;
         [_viewController.textView didChangeText];
     }
-   
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {

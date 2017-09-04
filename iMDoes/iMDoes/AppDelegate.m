@@ -9,13 +9,14 @@
 #import "AppDelegate.h"
 #import "TitleAccessController.h"
 #import "ViewController.h"
-
+#import "MDocument.h"
 
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong)NSWindow *myWindow;
-//@property (nonatomic, strong)NSStatusItem *statusItem;
+
+@property (nonatomic, strong) NSDocument *myDocument;
+@property (nonatomic, strong) NSStatusItem *statusItem;
 @end
 
 @implementation AppDelegate
@@ -24,33 +25,27 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-//    self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
-//    self.statusItem.image = [NSImage imageNamed:@"markdown"];
-//    self.statusItem.target = self;
-//    self.statusItem.action = @selector(reopenWindow);
+    self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
+    self.statusItem.image = [NSImage imageNamed:@"markdown"];
+    self.statusItem.target = self;
+    self.statusItem.action = @selector(reopenWindow);
 }
 
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{
-    return !(flag | ([self.myWindow makeKeyAndOrderFront:self], 0));
+    
+    return !(flag | ([self.myWindow makeKeyAndOrderFront:nil], 0));
+    
 }
 
-//- (void)reopenWindow{
-//    [self.myWindow isVisible] ? nil : [self.myWindow makeKeyAndOrderFront:self];
-//}
-
-#pragma  mark - Getter
-- (NSWindow *)myWindow{
-    if (_myWindow == nil) {
-        for (NSWindow *w in NSApp.windows ) {
-            if ([NSStringFromClass([w class]) isEqualToString:@"NSWindow"]){
-                _myWindow = w;
-                break;
-            }
-        }
-    }
-    return _myWindow;
+- (void)reopenWindow{
+    if ([self.myWindow isVisible]) {return;}
+    
+    self.myDocument = [[MDocument alloc]init];
+    [self.myDocument makeWindowControllers];
+     [self.myDocument showWindows];
 }
+
 
 
 @end

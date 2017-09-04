@@ -7,6 +7,7 @@
 //
 
 #import "WindowController.h"
+#import "AppDelegate.h"
 
 
 @interface WindowController ()
@@ -21,7 +22,10 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
-
+    AppDelegate *ad = NSApp.delegate;
+    ad.myWindow = self.window;
+    
+    
     self.window.titlebarAppearsTransparent = YES;
 //    self.window.styleMask = self.window.styleMask | NSWindowStyleMaskFullSizeContentView;
     
