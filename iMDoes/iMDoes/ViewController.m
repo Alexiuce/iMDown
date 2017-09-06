@@ -213,12 +213,9 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     }
 }
 
-- (IBAction)showToolBar:(NSButton *)sender{
-    NSMenuItem *item = (NSMenuItem *) sender;
+- (void)showToolBar{
+  
     _barDisplayed = !_barDisplayed;
-    item.title = _barDisplayed ? @"Hiden Toolbar" : @"Show Toolbar"  ;
-    
-    
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
         context.duration =  0.25f;
         context.allowsImplicitAnimation = YES;

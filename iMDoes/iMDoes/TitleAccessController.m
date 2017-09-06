@@ -50,6 +50,7 @@
 
 - (void)viewDidAppear{
     [super viewDidAppear];
+
 //    BOOL isMuted = [[NSUserDefaults standardUserDefaults] boolForKey:MuteKey];
 //    self.currentState = isMuted ?   NSOnState :  NSOffState ;
 //    self.muteButton.state = self.currentState;

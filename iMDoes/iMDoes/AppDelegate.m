@@ -15,6 +15,9 @@
 @interface AppDelegate ()
 
 
+@property (weak) IBOutlet NSMenu *statusMenu;
+
+
 @property (nonatomic, strong) NSDocument *myDocument;
 @property (nonatomic, strong) NSStatusItem *statusItem;
 @end
@@ -27,8 +30,9 @@
     // Insert code here to initialize your application
     self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.image = [NSImage imageNamed:@"markdown"];
-    self.statusItem.target = self;
-    self.statusItem.action = @selector(reopenWindow);
+//    self.statusItem.target = self;
+//    self.statusItem.action = @selector(reopenWindow);
+    self.statusItem.menu = self.statusMenu;
 }
 
 
@@ -38,13 +42,30 @@
     
 }
 
-- (void)reopenWindow{
-    if ([self.myWindow isVisible]) {return;}
+//- (void)reopenWindow{
+//    if ([self.myWindow isVisible]) {return;}
+//    
+//    self.myDocument = [[MDocument alloc]init];
+//    [self.myDocument makeWindowControllers];
+//    [self.myDocument showWindows];
+//}
+- (IBAction)showToolBar:(NSMenuItem *)sender {
+    if ( ![self.myWindow isVisible]) {
+        sender.state = NSOffState;
+        return;
+    }
     
-    self.myDocument = [[MDocument alloc]init];
-    [self.myDocument makeWindowControllers];
-     [self.myDocument showWindows];
+    sender.state = sender.state == NSOnState ?  NSOffState : NSOnState;
+    ViewController *vc = (ViewController *)NSApp.keyWindow.contentViewController;
+    [vc showToolBar];
+    
 }
+
+- (IBAction)exitApp:(id)sender {
+    [NSApp terminate:nil];
+}
+
+
 
 
 

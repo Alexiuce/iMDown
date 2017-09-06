@@ -31,5 +31,8 @@
 
 @property (weak, nonatomic) id <XCExportFileProcotol> delegate;
 
+
+- (void)showToolBar;
+
 @end
 
