@@ -35,6 +35,12 @@
 		F231A6E01F270C050079DDE2 /* HGMarkdownHighlightingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A6DB1F270C050079DDE2 /* HGMarkdownHighlightingStyle.m */; };
 		F231A6E11F270C050079DDE2 /* pmh_styleparser.c in Sources */ = {isa = PBXBuildFile; fileRef = F231A6DD1F270C050079DDE2 /* pmh_styleparser.c */; };
 		F231A6E41F2711180079DDE2 /* pmh_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = F231A6E31F2711180079DDE2 /* pmh_parser.c */; };
+		F2C25F981F60E72700BB0688 /* Clearness Dark.css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F921F60E72700BB0688 /* Clearness Dark.css */; };
+		F2C25F991F60E72700BB0688 /* Clearness.css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F931F60E72700BB0688 /* Clearness.css */; };
+		F2C25F9A1F60E72700BB0688 /* GitHub.css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F941F60E72700BB0688 /* GitHub.css */; };
+		F2C25F9B1F60E72700BB0688 /* GitHub2.css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F951F60E72700BB0688 /* GitHub2.css */; };
+		F2C25F9C1F60E72700BB0688 /* Solarized (Dark).css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F961F60E72700BB0688 /* Solarized (Dark).css */; };
+		F2C25F9D1F60E72700BB0688 /* Solarized (Light).css in Resources */ = {isa = PBXBuildFile; fileRef = F2C25F971F60E72700BB0688 /* Solarized (Light).css */; };
 		F2F37BE11F034BB1002693CF /* MDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F37BE01F034BB1002693CF /* MDocument.m */; };
 		F2FFCAFB1F18A854001420E4 /* MYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FFCAFA1F18A854001420E4 /* MYAnimation.m */; };
 		FE80EDDD93715C38D5D30CCC /* libPods-iMDoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D9F7E2FB0ACB6D3BF69E7 /* libPods-iMDoes.a */; };
@@ -101,6 +107,12 @@
 		F231A6E21F270EC50079DDE2 /* pmh_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_parser.h; sourceTree = "<group>"; };
 		F231A6E31F2711180079DDE2 /* pmh_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmh_parser.c; sourceTree = "<group>"; };
 		F2405E411EEFBBD10062A468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F2C25F921F60E72700BB0688 /* Clearness Dark.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "Clearness Dark.css"; sourceTree = "<group>"; };
+		F2C25F931F60E72700BB0688 /* Clearness.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Clearness.css; sourceTree = "<group>"; };
+		F2C25F941F60E72700BB0688 /* GitHub.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = GitHub.css; sourceTree = "<group>"; };
+		F2C25F951F60E72700BB0688 /* GitHub2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = GitHub2.css; sourceTree = "<group>"; };
+		F2C25F961F60E72700BB0688 /* Solarized (Dark).css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "Solarized (Dark).css"; sourceTree = "<group>"; };
+		F2C25F971F60E72700BB0688 /* Solarized (Light).css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "Solarized (Light).css"; sourceTree = "<group>"; };
 		F2F37BDF1F034BB1002693CF /* MDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDocument.h; sourceTree = "<group>"; };
 		F2F37BE01F034BB1002693CF /* MDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDocument.m; sourceTree = "<group>"; };
 		F2FFCAF91F18A854001420E4 /* MYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAnimation.h; sourceTree = "<group>"; };
@@ -176,6 +188,12 @@
 		D859FBED1EEC3C7C0075388C /* iMDoes */ = {
 			isa = PBXGroup;
 			children = (
+				F2C25F921F60E72700BB0688 /* Clearness Dark.css */,
+				F2C25F931F60E72700BB0688 /* Clearness.css */,
+				F2C25F941F60E72700BB0688 /* GitHub.css */,
+				F2C25F951F60E72700BB0688 /* GitHub2.css */,
+				F2C25F961F60E72700BB0688 /* Solarized (Dark).css */,
+				F2C25F971F60E72700BB0688 /* Solarized (Light).css */,
 				D8454AF61EF62D1D00632E42 /* markdown.css */,
 				D859FC121EEC3D410075388C /* Markdown */,
 				D859FC101EEC3D250075388C /* key-new-01.mp3 */,
@@ -329,10 +347,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FBF81EEC3C7C0075388C /* Assets.xcassets in Resources */,
+				F2C25F981F60E72700BB0688 /* Clearness Dark.css in Resources */,
 				D859FC0E1EEC3CCA0075388C /* TitleAccessController.xib in Resources */,
 				D859FC111EEC3D250075388C /* key-new-01.mp3 in Resources */,
+				F2C25F9A1F60E72700BB0688 /* GitHub.css in Resources */,
+				F2C25F9C1F60E72700BB0688 /* Solarized (Dark).css in Resources */,
+				F2C25F9D1F60E72700BB0688 /* Solarized (Light).css in Resources */,
 				D859FC031EEC3CA80075388C /* Main.storyboard in Resources */,
+				F2C25F991F60E72700BB0688 /* Clearness.css in Resources */,
 				D8454AF71EF62D1D00632E42 /* markdown.css in Resources */,
+				F2C25F9B1F60E72700BB0688 /* GitHub2.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,12 +14,20 @@
 
 @interface AppDelegate ()
 
+@property (weak) IBOutlet NSMenuItem *defaultThemeItem;   // 默认主题item
 
-@property (weak) IBOutlet NSMenu *statusMenu;
+@property (weak) IBOutlet NSMenuItem *displayToolItem;    // 显示工具栏item
+@property (weak) IBOutlet NSMenuItem *changedItem;        // 更换主题item
+
+@property (weak) IBOutlet NSMenu *statusMenu;            // 菜单栏
 
 
-@property (nonatomic, strong) NSDocument *myDocument;
-@property (nonatomic, strong) NSStatusItem *statusItem;
+@property (nonatomic, strong) NSDocument *myDocument;     // 文档编辑类
+@property (nonatomic, strong) NSStatusItem *statusItem;    // 状态栏item
+
+@property (nonatomic, copy) NSString *currentThemeText;    // 当前显示的主题名称
+@property (weak, nonatomic) NSMenuItem *currentThemeItem;   // 当前选择的主题item
+
 @end
 
 @implementation AppDelegate
@@ -33,6 +41,7 @@
 //    self.statusItem.target = self;
 //    self.statusItem.action = @selector(reopenWindow);
     self.statusItem.menu = self.statusMenu;
+    self.currentThemeItem = self.defaultThemeItem;
 }
 
 
@@ -65,6 +74,17 @@
     [NSApp terminate:nil];
 }
 
+- (IBAction)changedTheme:(NSMenuItem *)sender {
+    if ([self.currentThemeText isEqualToString:sender.title]) {return;}
+    self.currentThemeText = sender.title;
+    
+    self.currentThemeItem.state = NSOffState;
+    sender.state = NSOnState;
+    self.currentThemeItem = sender;
+    
+    ViewController *vc = (ViewController *)NSApp.keyWindow.contentViewController;
+    [vc updateTheme:self.currentThemeText];
+}
 
 
 

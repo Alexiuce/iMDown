@@ -625,6 +625,9 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
                     <connections>
+                        <outlet property="changedItem" destination="Dmu-Fr-k3W" id="q9O-Lm-J2x"/>
+                        <outlet property="defaultThemeItem" destination="guP-G2-yvh" id="RYv-FU-KEZ"/>
+                        <outlet property="displayToolItem" destination="k5H-Bh-kfV" id="2NG-gk-L9D"/>
                         <outlet property="statusMenu" destination="exK-gE-43t" id="AdW-bN-cog"/>
                     </connections>
                 </customObject>
@@ -635,6 +638,55 @@
                             <connections>
                                 <action selector="showToolBar:" target="Voe-Tx-rLC" id="vG5-pP-lDB"/>
                             </connections>
+                        </menuItem>
+                        <menuItem title="更换主题" id="Dmu-Fr-k3W">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" id="28O-0j-5gY">
+                                <items>
+                                    <menuItem title="Default" state="on" id="guP-G2-yvh">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="U3P-O6-dmB"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Clearness Dark" id="PVP-xq-yBj">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="7NB-aG-cCw"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Clearness" id="Yal-1a-RE5">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="734-fN-Ykf"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="GitHub" id="igg-1O-dFK">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="Yri-yu-IkE"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="GitHub2" id="cdp-gd-vJh">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="1x7-gD-XfQ"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Solarized (Dark)" id="B80-Mu-nDa">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="6eu-ku-J5f"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Solarized (Light)" id="7OF-UX-SU6">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="changedTheme:" target="Voe-Tx-rLC" id="quz-NK-c50"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
                         </menuItem>
                         <menuItem title="退出应用" id="b35-kQ-O6A">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -665,7 +717,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="409"/>
         </scene>
         <!--Policy Delegate-->
         <scene sceneID="hIz-AP-VOD">

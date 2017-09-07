@@ -32,6 +32,9 @@
 @property (weak, nonatomic) id <XCExportFileProcotol> delegate;
 
 
+- (void)updateTheme:(NSString *)themeName;
+
+
 - (void)showToolBar;
 
 @end

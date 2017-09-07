@@ -38,6 +38,11 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 
 //@property (nonatomic, strong) HGMarkdownHighlighter *highlighter;
 
+@property (nonatomic, copy) NSString *currentTheme;    // 当前主题样式
+
+
+@property (nonatomic, copy) NSString *currentCss;     // 根据当前主题加载的css
+
 @end
 
 
@@ -85,11 +90,11 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
     //markdown -> html
     NSString *htmlString = [MMMarkdown HTMLStringWithMarkdown:self.textView.string extensions:MMMarkdownExtensionsGitHubFlavored error:nil];
     //加载css样式
-    static NSString *css;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        css = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"markdown" ofType:@"css"] encoding:NSUTF8StringEncoding error:nil];
-    });
+//    static NSString *css;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        css = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Solarized (Dark)" ofType:@"css"] encoding:NSUTF8StringEncoding error:nil];
+//    });
     NSString *html = [NSString stringWithFormat:@"\
                       <html>\
                       <head>\
@@ -99,7 +104,7 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
                       %@\
                       </body>\
                       </html>\
-                      ",css,htmlString];
+                      ",self.currentCss,htmlString];
     
     [self.webView.mainFrame loadHTMLString:html baseURL:nil ];
 //    [self.webView loadHTMLString:html baseURL:nil];
@@ -237,5 +242,24 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 //    self.topBoxTop.constant = -44 * delat ;
 //}
 
+
+- (void)updateTheme:(NSString *)themeName{
+    if ([self.currentTheme isEqualToString:themeName]) {return;}
+    self.currentTheme = themeName;
+    _currentCss =  [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:themeName ofType:@"css"] encoding:NSUTF8StringEncoding error:nil];
+
+#pragma  clang diagnostic ignored "-Wnonnull"
+
+    [self textDidChange:nil];
+    
+}
+
+
+- (NSString *)currentCss{
+    if (_currentCss == nil) {
+        _currentCss = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"markdown" ofType:@"css"] encoding:NSUTF8StringEncoding error:nil];
+    }
+    return _currentCss;
+}
 
 @end
