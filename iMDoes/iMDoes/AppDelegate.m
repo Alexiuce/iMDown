@@ -12,12 +12,19 @@
 #import "MDocument.h"
 
 
-@interface AppDelegate ()
+@interface AppDelegate () <NSMenuDelegate>
 
 @property (weak) IBOutlet NSMenuItem *defaultThemeItem;   // 默认主题item
 
 @property (weak) IBOutlet NSMenuItem *displayToolItem;    // 显示工具栏item
 @property (weak) IBOutlet NSMenuItem *changedItem;        // 更换主题item
+
+@property (weak) IBOutlet NSMenuItem *subHidenToolBar;
+
+@property (weak) IBOutlet NSMenuItem *subShowToolBar;
+
+@property (weak, nonatomic) NSMenuItem *subCurrentItem;
+
 
 @property (weak) IBOutlet NSMenu *statusMenu;            // 菜单栏
 
@@ -41,7 +48,11 @@
 //    self.statusItem.target = self;
 //    self.statusItem.action = @selector(reopenWindow);
     self.statusItem.menu = self.statusMenu;
+    self.statusMenu.delegate = self;
     self.currentThemeItem = self.defaultThemeItem;
+    _subCurrentItem = self.subHidenToolBar;
+    
+    
 }
 
 
@@ -59,18 +70,24 @@
 //    [self.myDocument showWindows];
 //}
 - (IBAction)showToolBar:(NSMenuItem *)sender {
-    if ( ![self.myWindow isVisible]) {
-        sender.state = NSOffState;
+    if (!NSApp.active) {return;}
+   
+    if (_subCurrentItem == sender) {
         return;
     }
     
-    sender.state = sender.state == NSOnState ?  NSOffState : NSOnState;
+    _subCurrentItem.state = NSOffState;
+    sender.state = NSOnState;
+    _subCurrentItem = sender;
+    
     ViewController *vc = (ViewController *)NSApp.keyWindow.contentViewController;
     [vc showToolBar];
     
 }
 
+
 - (IBAction)exitApp:(id)sender {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [NSApp terminate:nil];
 }
 
@@ -86,7 +103,14 @@
     [vc updateTheme:self.currentThemeText];
 }
 
+#pragma mark - NSMenuDelegate
 
+- (void)menuWillOpen:(NSMenu *)menu{
+    
+        self.displayToolItem.enabled = [self.myWindow isVisible];
+        self.changedItem.enabled = [self.myWindow isVisible];
+    
+}
 
 
 @end

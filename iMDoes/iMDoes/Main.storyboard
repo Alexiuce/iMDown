@@ -625,20 +625,37 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
                     <connections>
-                        <outlet property="changedItem" destination="Dmu-Fr-k3W" id="q9O-Lm-J2x"/>
+                        <outlet property="changedItem" destination="Dmu-Fr-k3W" id="rT0-ge-3bf"/>
                         <outlet property="defaultThemeItem" destination="guP-G2-yvh" id="RYv-FU-KEZ"/>
                         <outlet property="displayToolItem" destination="k5H-Bh-kfV" id="2NG-gk-L9D"/>
                         <outlet property="statusMenu" destination="exK-gE-43t" id="AdW-bN-cog"/>
+                        <outlet property="subHidenToolBar" destination="i9d-4T-VN6" id="6Q5-Kd-sGF"/>
+                        <outlet property="subShowToolBar" destination="N44-wr-mAl" id="FLw-rQ-Lkn"/>
                     </connections>
                 </customObject>
                 <menu id="exK-gE-43t">
                     <items>
-                        <menuItem title="显示工具栏" id="k5H-Bh-kfV">
+                        <menuItem title="工具栏" id="k5H-Bh-kfV">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="showToolBar:" target="Voe-Tx-rLC" id="vG5-pP-lDB"/>
-                            </connections>
+                            <menu key="submenu" id="nEu-hb-BDL">
+                                <items>
+                                    <menuItem title="显示" id="N44-wr-mAl">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="showToolBar:" target="Voe-Tx-rLC" id="4oP-bN-ART"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="bTo-Dk-RbY"/>
+                                    <menuItem title="隐藏" state="on" id="i9d-4T-VN6">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="showToolBar:" target="Voe-Tx-rLC" id="d9h-ms-7RC"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="MT7-Fe-b2D"/>
                         <menuItem title="更换主题" id="Dmu-Fr-k3W">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" id="28O-0j-5gY">
@@ -649,36 +666,42 @@
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="U3P-O6-dmB"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="0X8-TB-c75"/>
                                     <menuItem title="Clearness Dark" id="PVP-xq-yBj">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="7NB-aG-cCw"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="yRg-nL-RoE"/>
                                     <menuItem title="Clearness" id="Yal-1a-RE5">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="734-fN-Ykf"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="8jq-xb-mKf"/>
                                     <menuItem title="GitHub" id="igg-1O-dFK">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="Yri-yu-IkE"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="PD2-Dw-Y9W"/>
                                     <menuItem title="GitHub2" id="cdp-gd-vJh">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="1x7-gD-XfQ"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="kBV-GS-h3U"/>
                                     <menuItem title="Solarized (Dark)" id="B80-Mu-nDa">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="changedTheme:" target="Voe-Tx-rLC" id="6eu-ku-J5f"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="RUj-0c-vEt"/>
                                     <menuItem title="Solarized (Light)" id="7OF-UX-SU6">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
@@ -688,6 +711,7 @@
                                 </items>
                             </menu>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="01l-aE-Abo"/>
                         <menuItem title="退出应用" id="b35-kQ-O6A">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
@@ -697,6 +721,7 @@
                     </items>
                 </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="mPo-Ae-GcG"/>
             </objects>
             <point key="canvasLocation" x="-36" y="-196"/>
         </scene>
