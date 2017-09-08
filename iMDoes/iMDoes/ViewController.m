@@ -61,6 +61,11 @@ typedef NS_ENUM(NSUInteger, TitleAccessStyle) {
 //    _highlighter.parseAndHighlightAutomatically = YES;
 //    [_highlighter activate];
     
+    NSString *themeName = [[NSUserDefaults standardUserDefaults] valueForKey:@"ThemeKey"];
+    if (themeName != nil) {
+        [self updateTheme:themeName];
+    }
+    
 }
 
 

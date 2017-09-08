@@ -95,6 +95,9 @@
     if ([self.currentThemeText isEqualToString:sender.title]) {return;}
     self.currentThemeText = sender.title;
     
+    [[NSUserDefaults standardUserDefaults] setValue:self.currentThemeText forKey:@"ThemeKey"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     self.currentThemeItem.state = NSOffState;
     sender.state = NSOnState;
     self.currentThemeItem = sender;
