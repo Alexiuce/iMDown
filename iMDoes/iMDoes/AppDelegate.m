@@ -45,9 +45,9 @@
     // Insert code here to initialize your application
     self.statusItem = [[NSStatusBar systemStatusBar]statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.image = [NSImage imageNamed:@"markdown"];
-//    self.statusItem.target = self;
-//    self.statusItem.action = @selector(reopenWindow);
-    self.statusItem.menu = self.statusMenu;
+    self.statusItem.target = self;
+    self.statusItem.action = @selector(reopenWindow);
+//    self.statusItem.menu = self.statusMenu;
     self.statusMenu.delegate = self;
     self.currentThemeItem = self.defaultThemeItem;
     _subCurrentItem = self.subHidenToolBar;
@@ -62,13 +62,23 @@
     
 }
 
-//- (void)reopenWindow{
+- (void)reopenWindow{
+
+    if (!NSApp.isActive) {
+        
+        [NSApp activateIgnoringOtherApps:YES];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.statusItem popUpStatusItemMenu:self.statusMenu];
+        });
+        return;
+    }
+     [self.statusItem popUpStatusItemMenu:self.statusMenu];
 //    if ([self.myWindow isVisible]) {return;}
 //    
 //    self.myDocument = [[MDocument alloc]init];
 //    [self.myDocument makeWindowControllers];
 //    [self.myDocument showWindows];
-//}
+}
 - (IBAction)showToolBar:(NSMenuItem *)sender {
     if (!NSApp.active) {return;}
    
@@ -92,6 +102,9 @@
 }
 
 - (IBAction)changedTheme:(NSMenuItem *)sender {
+    
+  
+    
     if ([self.currentThemeText isEqualToString:sender.title]) {return;}
     self.currentThemeText = sender.title;
     
@@ -104,15 +117,16 @@
     
     ViewController *vc = (ViewController *)NSApp.keyWindow.contentViewController;
     [vc updateTheme:self.currentThemeText];
+
+ 
+    
 }
 
 #pragma mark - NSMenuDelegate
 
 - (void)menuWillOpen:(NSMenu *)menu{
-    
-        self.displayToolItem.enabled = [self.myWindow isVisible];
-        self.changedItem.enabled = [self.myWindow isVisible];
-    
+    self.displayToolItem.enabled = [self.myWindow isVisible];
+    self.changedItem.enabled = [self.myWindow isVisible];
 }
 
 
