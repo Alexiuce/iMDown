@@ -23,9 +23,6 @@
 @implementation MDocument
 
 - (void)makeWindowControllers{
-    
-    NSLog(@"doc make win");
-    
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"mainWindowController"];
     
